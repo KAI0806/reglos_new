@@ -36,6 +36,12 @@ p{
     line-height: 300%;
 }
 
+.title_small{
+    margin-left: 2rem;
+    width: 10.5rem;
+    transform: translateY(.5rem);
+}
+
 /* ヘッダー */
 header .wrap{
     display: flex;
@@ -206,7 +212,6 @@ header .wrap .head_contact img{
 .parallax_content{
     display: flex;
     height: 100%;
-    padding: 100%;
     justify-content: center;
     align-items: center;
     background-image: url("../img/parallax.jpg");
@@ -214,6 +219,7 @@ header .wrap .head_contact img{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: -1;
 }
 
 /* news */
