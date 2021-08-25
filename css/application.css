@@ -2,11 +2,22 @@
 
 html{
     font-size: 0.5208vw;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
 }
 
 a{
     text-decoration: none;
     color: #202253;
+}
+
+h1{
+    font-size: 5rem;
+    font-weight: 300;
+    margin: 0;
 }
 
 h2{
@@ -63,7 +74,46 @@ header .wrap .header_nav{
 header .wrap .header_nav a{
     color: black;
     font-size: 1.8rem;
+    position: relative;
 }
+
+header .wrap .header_nav a::after{
+    position: absolute;
+    content: "";
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    bottom: -1.5rem;
+    height: .1rem;
+    width: 110%;
+    background: black;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+header .wrap .header_nav a:hover::after{
+    bottom: -.5rem;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+
+header .wrap .header_nav .is_current{
+    position: relative;
+}
+
+header .wrap .header_nav .is_current::after{
+    position: absolute;
+    content: "";
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: .1rem;
+    width: 110%;
+    background: black;
+    bottom: -.5rem;
+    opacity: 1;
+}
+
 
 header .wrap .head_contact{
     padding: .5rem 1rem;
