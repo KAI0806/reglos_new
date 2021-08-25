@@ -33,6 +33,7 @@ small{
 p{
     font-size: 2rem;
     color: #404040;
+    line-height: 300%;
 }
 
 /* ヘッダー */
@@ -150,18 +151,29 @@ header .wrap .head_contact img{
     position: relative;
 }
 
-#service .service_list a::before{
+.serv_arrow{
     position: absolute;
-    content: "";
-    background: url("../img/service_arrow.svg") center center/cover no-repeat;
     width: 5rem;
     height: 5rem;
     top: 50%;
     right: 5rem;
+    background: none;
+    transition: all .5s ease-in-out;
 }
 
-#service .service_list a:hover + #service .service_list a::before{
-    transform: translateX(5rem);
+.first:hover .serv_arrow{
+    right: 1rem;
+    transition: all .5s ease-in-out;
+}
+
+.pale:hover .serv_arrow{
+    right: 1rem;
+    transition: all .5s ease-in-out;
+}
+
+.third:hover .serv_arrow{
+    right: 1rem;
+    transition: all .5s ease-in-out;
 }
 
 #service .service_list .pale{
@@ -185,6 +197,23 @@ header .wrap .head_contact img{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.parallax_box{
+    height: 30rem;
+}
+
+.parallax_content{
+    display: flex;
+    height: 100%;
+    padding: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/parallax.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* news */
@@ -261,23 +290,20 @@ header .wrap .head_contact img{
     font-weight: 900;
     position: relative;
     margin-right: 10rem;
-    transition: all .2s ease-in-out;
 }
 
-#news .wrap .news_arrow::before{
+.news_arrow_img{
     position: absolute;
-    content: "";
-    background: url("../img/service_arrow.svg") center center/cover no-repeat;
     width: 5rem;
     height: 5rem;
     top: .5rem;
     right: -10rem;
+    transition: all .2s ease-in-out;
 }
 
-#news .wrap .news_arrow:hover{
-    padding-right: 10rem;
-    transform: translateX(10rem);
-    transition: all .2s ease-in-out;
+.news_arrow:hover .news_arrow_img{
+    right: -20rem;
+    transition: all .5s ease-in-out;
 }
 
 /* その他 */
@@ -313,6 +339,15 @@ header .wrap .head_contact img{
     justify-content: space-between;
     align-items: stretch;
     margin: auto;
+}
+
+#other .wrap a{
+    transition: all .2s ease-in-out;
+}
+
+#other .wrap a:hover{
+    box-shadow: inset 5px 4px 5px 4px #bbbbbb;
+    transition: all .2s ease-in-out;
 }
 
 #other .wrap .blog, #other .wrap .wevies, #other .wrap .selectia{
@@ -385,15 +420,15 @@ header .wrap .head_contact img{
 }
 
 #media .media_content h4:hover{
-    opacity: .5;
+    color: #474fa3;
     transition: all .2s ease-in-out;
 }
 
 #media .media_content h4::before{
     position: absolute;
     content: "";
-    width: 3rem;
-    height: 2.6rem;
+    width: 2rem;
+    height: 1.8rem;
     top: 0;
     left: 12rem;
     background: url("../img/media_arrow.svg") center center/cover no-repeat;
@@ -597,6 +632,12 @@ footer .wrap .footer_top .footer_nav div ul li{
 footer .wrap .footer_top .footer_nav a{
     color: white;
     font-size: 2rem;
+    transition: all .2s ease-in-out;
+}
+
+footer .wrap .footer_top .footer_nav a:hover{
+    opacity: .7;
+    transition: all .2s ease-in-out;
 }
 
 footer .wrap .footer_top .footer_nav ul a{
@@ -644,9 +685,25 @@ footer .wrap .footer_bottom .foot_right .right_content .bottom_nav{
     width: 100%;
 }
 
+footer .wrap .footer_bottom .foot_address a{
+    color: white;
+    font-size: 1.5rem;
+}
+
+footer .wrap .footer_bottom .foot_address a:hover{
+    opacity: .5;
+    transition: all .2s ease-in-out ;
+}
+
 footer .wrap .footer_bottom .foot_right .right_content .bottom_nav a{
     color: white;
     font-size: 1.5rem;
+    transition: all .2s ease-in-out;
+}
+
+footer .wrap .footer_bottom .foot_right .right_content .bottom_nav a:hover{
+    opacity: .7;
+    transition: all .2s ease-in-out;
 }
 
 footer .wrap .footer_bottom p{
