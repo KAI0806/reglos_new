@@ -1,1 +1,22 @@
 @charset "UTF-8";
+#kv{
+    margin-bottom: 0;
+}
+
+#kv_second{
+    height: 50rem;
+    background: url("../img/kv_second.png") center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#service_list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#service_list h2, #service_list a{
+    font-size: 4rem;
+}
