@@ -1,13 +1,5 @@
 @charset "UTF-8";
-#kv{
-    color: white;
-    height: 20rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url("../img/about/kv.png") center center/cover no-repeat;
-    margin-bottom: 20rem;
-}
+
 
 #company{
     padding-bottom: 35rem;

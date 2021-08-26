@@ -134,6 +134,16 @@ header .wrap .head_contact img{
     height: 1.2rem;
 }
 
+#kv{
+    color: white;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/about/kv.png") center center/cover no-repeat;
+    margin-bottom: 20rem;
+}
+
 /* メディア掲載 */
 #media{
     width: 100%;
@@ -183,6 +193,7 @@ header .wrap .head_contact img{
     position: absolute;
     right: 10rem;
     top: 15%;
+    width: 41rem;
 }
 
 /* foot_contact */
