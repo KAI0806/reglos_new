@@ -13,10 +13,177 @@
 
 #service_list{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+    margin-top: 1440%;
+    margin: auto;
+    padding: 20rem;
+}
+
+#service_list h2{
+    font-size: 4rem;
+    font-weight: 100;
+    color: black;
+    position: relative;
+}
+
+#service_list h2::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(100%, 50%);
+    bottom: 50%;
+    height: 1px;
+    width: 15rem;
+    background: #9093BB;
+}
+
+#service_list a{
+    color: black;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+#service_list a small{
+    color: black;
+    margin-left: 1rem;
+}
+
+.service_nav{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-#service_list h2, #service_list a{
-    font-size: 4rem;
+.border{
+    position: relative;
+}
+
+.border::before{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 3rem;
+    right: -50%;
+    bottom: 0;
+    background: #707070;
+}
+
+#service_list a img{
+    position: absolute;
+    right: 50%;
+    margin-right: -60%;
+    transform: translate(50%, 50%);
+    bottom: 50%;
+    width: 1rem;
+}
+
+#creator, #human{
+    padding-bottom: 35rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#creator .service_title{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/service/service_bg01.svg") center center/cover no-repeat;
+    position: relative;
+}
+
+.service_title h3{
+    font-size: 8rem;
+}
+
+#creator .service_title::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #F8F8F8;
+    z-index: -1;
+    left: 2rem;
+    top: 2rem;
+}
+
+.service_wrap{
+    width: 49%;
+    padding-top: 2rem
+}
+
+.service_wrap .service_content{
+    border-bottom: 1px solid #959595;
+    margin-bottom: 5rem;
+    padding: 0 5rem;
+}
+
+.service_wrap .service_content h4{
+    border-left: 1rem solid black;
+    padding-left: 1.5rem;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.service_wrap .service_content p{
+    padding: 0 5rem;
+}
+
+.service_wrap .service_link{
+    border-bottom: 1px solid #959595;
+    padding: 0 20%;
+    text-align: center;
+    position: relative;
+}
+
+.service_wrap .service_link h4{
+    font-size: 3rem;
+    font-weight: 100;
+    color: black;
+}
+
+.service_arrow{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    top: 25%;
+    right: 5rem;
+    background: none;
+    transition: all .5s ease-in-out;
+}
+
+.trigger:hover .service_arrow{
+    right: 1rem;
+}
+
+#human .service_title{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/service/service_bg02.svg") center center/cover no-repeat;
+    position: relative;
+}
+
+#human .service_title::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #FCFCFC;
+    z-index: -1;
+    left: 2rem;
+    top: 2rem;
+}
+
+.wevies p, .cc p, .selectia p{
+    background: #07192F;
+    color: white;
 }
