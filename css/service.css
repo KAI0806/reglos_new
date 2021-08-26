@@ -81,11 +81,21 @@
     width: 1rem;
 }
 
-#creator, #human{
+#creator, #human, #service{
     padding-bottom: 35rem;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+}
+
+#service .service_title{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/service/service_bg01.svg") center center/cover no-repeat;
+    position: relative;
 }
 
 #creator .service_title{
@@ -102,7 +112,7 @@
     font-size: 8rem;
 }
 
-#creator .service_title::before{
+#creator .service_title::before, #service .service_title::before{
     content: "";
     position: absolute;
     height: 100%;
@@ -152,7 +162,8 @@
     position: absolute;
     width: 5rem;
     height: 5rem;
-    top: 25%;
+    top: 50%;
+    margin-top: -2%;
     right: 5rem;
     background: none;
     transition: all .5s ease-in-out;
@@ -186,4 +197,47 @@
 .wevies p, .cc p, .selectia p{
     background: #07192F;
     color: white;
+    padding-left: 5rem;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.wevies, .cc, .selectia{
+    height: auto;
+}
+
+.cc .trigger{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.selectia .trigger{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.wevies .trigger{
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#service .wevies .logo{
+    height: 15rem;
+}
+
+#service .cc .logo{
+    height: 8rem;
+}
+
+#service .selectia .logo{
+    height: 15rem;
 }
