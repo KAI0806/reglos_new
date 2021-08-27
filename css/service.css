@@ -5,7 +5,7 @@
 
 #kv_second{
     height: 50rem;
-    background: url("../img/kv_second.png") center center/cover no-repeat;
+    background: url("../img/service/kv_second.png") center center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
