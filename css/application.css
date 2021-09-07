@@ -134,8 +134,31 @@ header .wrap .head_contact:hover{
     transition: all .2s ease-in-out;
 }
 
+header .wrap .head_contact:hover small{
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
 header .wrap .head_contact img{
     height: 1.2rem;
+}
+
+header .wrap .entry_link{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 23%;
+}
+
+header .wrap .entry_link a{
+    text-align: center;
+    width: 43%;
+}
+
+header .wrap .entry_link small{
+    font-size: 1rem;
+    color: black;
+    transition: all .2s ease-in-out;
 }
 
 #kv{

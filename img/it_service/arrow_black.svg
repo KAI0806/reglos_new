@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41.61" height="40.989" viewBox="0 0 41.61 40.989">
+  <g id="グループ_1466" data-name="グループ 1466" transform="translate(-1176 -2579.525)">
+    <g id="楕円形_1" data-name="楕円形 1" transform="translate(1176 2579.525)" fill="none" stroke="#707070" stroke-width="1">
+      <ellipse cx="20.805" cy="20.495" rx="20.805" ry="20.495" stroke="none"/>
+      <ellipse cx="20.805" cy="20.495" rx="20.305" ry="19.995" fill="none"/>
+    </g>
+    <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward" d="M14.51,11.385a.472.472,0,0,0,0,.665l2.2,2.2H8.341a.47.47,0,0,0,0,.94H16.7l-2.2,2.2a.476.476,0,0,0,0,.665.468.468,0,0,0,.661,0l2.978-3h0a.528.528,0,0,0,.1-.148.448.448,0,0,0,.036-.181.471.471,0,0,0-.134-.329l-2.978-3A.46.46,0,0,0,14.51,11.385Z" transform="translate(1183.578 2585.137)" fill="#707070"/>
+  </g>
+</svg>
