@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+.red{
+    color: red;
+}
+
+#entry_kv .kv_img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15rem;
+}
+
+#title{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+#title small{
+    color: black;
+    margin-left: 2rem;
+    font-size: 3.5rem;
+}
+
+#form{
+    width: 60%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 15rem;
+}
+
+#form .formrun{
+    width: 100%;
+}
+
+#form h3{
+    border-left: 1.5rem solid #1F2A37;
+    padding-left: 1rem;
+    margin: 5rem 0;
+}
+
+#form p{
+    margin: 0;
+    line-height: 150%;
+}
+
+#form .name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+}
+
+#form .name div{
+    padding: 1rem 0 1rem 2rem;
+}
+
+#form .red{
+    font-size: 1.5rem;
+}
+
+#address, #tel, #mail, #time, #first_choice, #second_choice, #content{
+    width: 65%;
+}
+
+label{
+    font-size: 2rem;
+}
+
+textarea{
+    border-radius: 0;
+    padding: 1rem;
+    height: 25rem;
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+fieldset label{
+    margin-left: 2rem;
+}
+
+input{
+    border-radius: 0;
+    border: 1px solid #707070;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.left{
+    background: #EEEEEE;
+    text-align: center;
+    width: 20%;
+    padding: 1rem 0;
+}
+
+.right{
+    width: 80%;
+}
+
+#form .policy{
+    margin: 5rem 0;
+    border: 1px solid #707070;
+    overflow-y: scroll;
+    height: 20rem;
+    padding: 1.5rem;
+}
+
+#form .gray{
+    background: #EEEEEE;
+    padding: 2rem;
+    margin-bottom: 5rem;
+}
+
+.check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#resume, #curriculum{
+    border: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.check div{
+    margin-bottom: 5rem;
+}
+
+.submit{
+    width: 40%;
+    padding: 1.5rem;
+    background: white;
+    border: 1px solid #1F2A37;
+    border-radius: .5rem;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.submit:hover{
+    background: black;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.submit::before{
+    position: absolute;
+    content: ">";
+    font-size: 2rem;
+    right: 5rem;
+    
+}
+
+#form .policy p{
+    margin-bottom: 2rem;
+}
