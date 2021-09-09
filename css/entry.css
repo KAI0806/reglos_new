@@ -10,6 +10,34 @@
     margin-bottom: 15rem;
 }
 
+#contact_kv{
+    text-align: center;
+    background: url("../img/contact/contact.kv.jpg") center center/cover no-repeat;
+    padding: 4rem 0;
+    margin-bottom: 15rem;
+}
+
+#contact_kv h2{
+    color: white;
+}
+
+.contact_title{
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.contact_title::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    height: 1px;
+    width: 30rem;
+    background: #6B6E99;
+}
+
 #title{
     text-align: center;
     margin-bottom: 5rem;
@@ -63,7 +91,7 @@
     font-size: 1.5rem;
 }
 
-#address, #tel, #mail, #time, #first_choice, #second_choice, #content{
+#address, #tel, #mail, #time, #first_choice, #second_choice, #content, #company, #department, #director{
     width: 65%;
 }
 

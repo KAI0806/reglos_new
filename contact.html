@@ -83,12 +83,12 @@
     </header>
 
     <main>
-        <section id="entry_kv">
-            <img class="kv_img" src="img/contact/creator_entry_kv.png" alt="クリエイター募集">
+        <section id="contact_kv">
+            <h2>CONTACT</h2>
         </section>
 
         <section id="title">
-            <h2>クリエイター求人<small>エントリー</small></h2>
+            <h2 class="contact_title">お問い合わせ</h2>
 
             <p>※入力していただいた情報は、SSLによる暗号化通信により安全に送受信されます。
                 <br/><span class="red">[必須]</span>の付いている項目は必ずご記入ください。</p>
@@ -98,7 +98,7 @@
 
         <section id="form">
             <!-- class, action, methodを変更しないでください -->
-            <form class="formrun" action="https://form.run/api/v1/r/2bth4futom6tlhpbomeikovd" method="post" enctype="multipart/form-data">
+            <form class="formrun" action="https://form.run/api/v1/r/mwwmwtjjrc4cf8aqiw9aox8c" method="post">
                 <!-- ↓自由に要素を追加・編集することができます -->
                 <h3>基本情報</h3>
                 
@@ -133,29 +133,28 @@
                             <div class="red" data-formrun-show-if-error="メイ">フリガナを入力してください</div>
                         </div>
                     </div>
-                    
                 </div>
 
                 <div class="name">
-                    <p class="left">生年月日<br/><span class="red">[必須]</span></p>
+                    <label class="left" for="company">会社名<br/><span class="red">[必須]</span></label>
                     <div class="right flex">
-                        <div>
-                            <input id="year" name="年" type="tel" maxlength="4" data-formrun-required>
-                            <label for="year">年</label>
-                            <div class="red" data-formrun-show-if-error="年">生年月日を正しく入力してください</div>
-                        </div>
-                        <div>
-                            <input id="month" name="月" type="tel" maxlength="2" data-formrun-required>
-                            <label for="month">月</label>
-                            <div class="red" data-formrun-show-if-error="月">生年月日を正しく入力してください</div>
-                        </div>
-                        <div>
-                            <input id="day" name="日" type="tel" maxlength="2" data-formrun-required>
-                            <label for="day">日</label>
-                            <div class="red" data-formrun-show-if-error="日">生年月日を正しく入力してください</div>
-                        </div>
+                        <input id="company" name="会社名" type="text" placeholder="例)株式会社リグロス" data-formrun-required>
+                        <div class="red" data-formrun-show-if-error="会社名">会社名を入力してください</div>
                     </div>
-                    
+                </div>
+
+                <div class="name">
+                    <label class="left" for="department">部署名</label>
+                    <div class="right flex">
+                        <input id="department" name="部署名" type="text" placeholder="例)営業事業部">
+                    </div>
+                </div>
+
+                <div class="name">
+                    <label class="left" for="director">役職</label>
+                    <div class="right flex">
+                        <input id="director" name="役職" type="text" placeholder="例)課長">
+                    </div>
                 </div>
 
                 <div class="name">
@@ -199,72 +198,38 @@
                     </div>
                 </div>
 
-                <div class="name">
-                    <p class="left">添付書類<br/><span class="red">[必須]</span></p>
-                    <div class="right">
-                        <div class="file">
-                            <label for="resume">履歴書</label>
-                            <input id="resume" type="file" name="履歴書" data-formrun-required>
-                            <div class="red" data-formrun-show-if-error="履歴書">ファイルを選択してください</div>
-                        </div>
-                        <div class="file">
-                            <label for="curriculum">職務経歴書</label>
-                            <input id="curriculum" type="file" name="職務経歴書" data-formrun-required>
-                            <div class="red" data-formrun-show-if-error="職務経歴書">ファイルを選択してください</div>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <h3>面談希望日時</h3>
-
-                <div class="name">
-                    <label class="left" for="time">電話可能時間帯<br/><span class="red">[必須]</span></label>
-                    <div class="right flex">
-                        <input id="time" type="text" name="電話可能時間帯" placeholder="例)月～金 17:00~19:00" data-formrun-required>
-                        <div class="red" data-formrun-show-if-error="電話可能時間帯">お電話が可能な時間帯を入力してください</div>
-                    </div>
-                </div>
-                <div class="name">
-                    <label class="left" for="first_choice">面談日 第１希望<br/><span class="red">[必須]</span></label>
-                    <div class="right flex">
-                        <input id="first_choice" type="text" name="面談日第１希望" placeholder="例)2021年 ⚫︎月 ⚫︎日" data-formrun-required>
-                        <div class="red" data-formrun-show-if-error="面談日第１希望">面談希望日を入力してください</div>
-                    </div>
-                </div>
-                <div class="name">
-                    <label class="left" for="second_choice">面談日 第２希望</label>
-                    <div class="right flex">
-                        <input id="second_choice" type="text" name="面談日第２希望" placeholder="例)2021年 ⚫︎月 ⚫︎日">
-                    </div>
-                </div>
-
                 <h3>お問い合わせ内容</h3>
 
-                <fieldset>
+                <fieldset data-formrun-required>
                     <div class="name">
-                        <p class="left">件名</p>
+                        <p class="left">件名<br/><span class="red">[必須]</span></p>
                         <div class="right flex">
                             <label class="form-check-label form-check-inline">
                                 <input class="form-check-input" type="radio" name="件名" value="お問合せ">
                                 お問合せ
-                                </label>
-                                <label class="form-check-label form-check-inline">
-                                <input class="form-check-input" type="radio" name="件名" value="面談について">
-                                面談について
-                                </label>
-                                <label class="form-check-label form-check-inline">
+                            </label>
+                            <label class="form-check-label form-check-inline">
+                                <input class="form-check-input" type="radio" name="件名" value="資料請求">
+                                資料請求
+                            </label>
+                            <label class="form-check-label form-check-inline">
+                                <input class="form-check-input" type="radio" name="件名" value="資料請求">
+                                お見積り
+                            </label>
+                            <label class="form-check-label form-check-inline">
                                 <input class="form-check-input" type="radio" name="件名" value="その他">
                                 その他
                             </label>
                         </div>
+                        <div class="red" data-formrun-show-if-error="件名">件名を選択してください</div>
                     </div>
                 </fieldset>
 
                 <div class="name">
-                    <label class="left" for="content">内容</label>
+                    <label class="left" for="content">本文<br/><span class="red">[必須]</span></label>
                     <div class="right flex">
-                        <textarea id="content" name="内容" placeholder="例)オンライン・オフラインとも面談可能です"></textarea>
+                        <textarea id="content" name="本文" placeholder="例)お問い合わせ" data-formrun-required></textarea>
+                        <div class="red" data-formrun-show-if-error="本文">本文を入力してください</div>
                     </div>
                 </div>
 
@@ -431,7 +396,7 @@
                     <img src="img/top/topic001.jpg" alt="インタビュー">
                     <div class="right_content">
                         <div class="bottom_nav">
-                            <a href="">お問い合わせ</a>
+                            <a href="contact.html">お問い合わせ</a>
                             <a href="">個人情報保護法</a>
                             <a href="">サイトマップ</a>
                         </div>
