@@ -194,6 +194,7 @@
 #news .news_list .news_content h4{
     font-size: 1.5rem;
     margin-left: 1.5rem;
+    margin-top: 1rem;
 }
 
 #news .news_list .news_content p{
@@ -282,6 +283,13 @@
     padding: 2rem 0;
 }
 
+#other .wrap .blog .other_txt, #other .wrap .wevies .other_txt, #other .wrap .selectia .other_txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #other .wrap .blog h3, #other .wrap .wevies h3, #other .wrap .selectia h3{
     font-size: 3.5rem;
 }
@@ -311,3 +319,178 @@
     font-size: 1.5rem;
 }
 
+@media screen and (max-width: 767px){
+    #thought{
+        width: 85%;
+        text-align: center;
+        margin-bottom: 10rem;
+    }
+
+    #thought h2{
+        position: relative;
+    }
+
+    #thought h2::before{
+        position: absolute;
+        content: "";
+        height: 3.5rem;
+        width: 1px;
+        background: #9093BB;
+        bottom: -5rem;
+        right: 50%;
+    }
+
+    #thought h2 small::before{
+        display: none;
+    }
+
+    #thought p{
+        margin-top: 7rem;
+        font-size: 1.9rem;
+    }
+
+    #service{
+        margin-bottom: 10rem;
+    }
+
+    #service .wrap{
+        width: 85%;
+        text-align: center;
+    }
+
+    #service .service_list{
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    #service .service_list a{
+        width: 100%;
+        padding: 10rem 0;
+    }
+    
+    .serv_arrow{
+        top: 35%;
+    }
+    
+    .first:hover .serv_arrow{
+        right: 1rem;
+        transition: all .5s ease-in-out;
+    }
+    
+    .pale:hover .serv_arrow{
+        right: 1rem;
+        transition: all .5s ease-in-out;
+    }
+    
+    .third:hover .serv_arrow{
+        right: 1rem;
+        transition: all .5s ease-in-out;
+    }
+    
+    #service .service_list .pale{
+        background-image:
+          radial-gradient(#171c5f0a 30%, transparent 30%);
+    }
+    
+    #service .service_list h3{
+        font-size: 6rem;
+    }
+    
+    #service .service_list a p{
+        color: #202253;
+        font-size: 2rem;
+    }
+
+    .parallax_box{
+        height: 15rem;
+    }
+
+    #news{
+        padding: 10rem 0;
+    }
+
+    #news .news_inner{
+        width: 85%;
+    }
+
+    #news .news_list{
+        flex-wrap: wrap;
+    }
+
+    #news .news_list .news_content{
+        width: 47%;
+        margin-bottom: 3rem;
+    }
+
+    #news h2{
+        text-align: center;
+        position: relative;
+    }
+
+    #news h2::before{
+        position: absolute;
+        content: "";
+        height: 3.5rem;
+        width: 1px;
+        background: #9093BB;
+        bottom: -5rem;
+        right: 50%;
+    }
+
+    #news h2 small::before{
+        display: none;
+    }
+
+    #news .news_list .news_content h4{
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #news .news_list .news_content p{
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    .news_arrow_img{
+        top: 0;
+    }
+
+    #other{
+        padding-bottom: 10rem;
+    }
+
+    #other .wrap{
+        width: 85%;
+        display: block;
+    }
+
+    #other h2{
+        margin-bottom: 5rem;
+    }
+
+    #other .wrap .blog, #other .wrap .wevies, #other .wrap .selectia{
+        width: calc(100% - 4rem);
+        margin-bottom: 5rem;
+        flex-direction: row;
+        padding: 2rem;
+    }
+
+    #other .wrap .blog img, #other .wrap .wevies img, #other .wrap .selectia img{
+        width: 35%;
+    }
+
+    #other .wrap .blog .other_txt, #other .wrap .wevies .other_txt, #other .wrap .selectia .other_txt{
+        width: 60%;
+    }
+
+    #other .wrap .other_txt h3{
+        font-size: 2rem;
+        margin-left: 1rem;
+        border-left: 1.2rem solid #C7C7C7;
+        margin-bottom: 1rem;
+    }
+
+    #other .wrap .blog p, #other .wrap .wevies p, #other .wrap .selectia p{
+        margin: auto 1rem;
+    }
+}
