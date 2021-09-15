@@ -152,6 +152,8 @@ header .wrap .header_nav .is_current::after{
 .header_nav li ul{
     position: absolute;
     height: 0;
+    width: max-content;
+    bottom: -10rem;
     overflow: hidden;
     transition: .5s ease-in-out;
 }

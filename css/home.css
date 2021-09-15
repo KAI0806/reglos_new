@@ -225,8 +225,8 @@
 }
 
 .news_arrow:hover .news_arrow_img{
-    right: -20rem;
-    transition: all .5s ease-in-out;
+    right: -15rem;
+    transition: all .3s ease-in-out;
 }
 
 /* その他 */
