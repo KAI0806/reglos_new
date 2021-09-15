@@ -78,6 +78,7 @@ p{
 
 header {
     background: white;
+    height: 7rem;
 }
 
 header .wrap{
@@ -94,6 +95,7 @@ header .wrap .header_nav{
     justify-content: space-between;
     align-items: center;
     width: 40%;
+    height: 6rem;
 }
 
 header .wrap .header_nav a{
@@ -137,6 +139,45 @@ header .wrap .header_nav .is_current::after{
     background: black;
     bottom: -.5rem;
     opacity: 1;
+}
+
+.header_nav li{
+    position: relative;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_nav li ul{
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+
+.header_nav li .trigger {
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+    padding: .5rem;
+    border-bottom: 1px solid black;
+}
+
+.header_nav .trigger:hover > ul{
+    background: white;
+    width: max-content;
+    bottom: -10rem;
+    padding: 1rem 2rem;
+    height: max-content;
+    transition: .5s ease-in-out;
+    overflow: hidden;
+}
+
+.header_nav .trigger:hover > ul > li {
+    height: 5rem;
+    overflow: visible;
+    transition: .5s ease-in-out;
 }
 
 
@@ -515,37 +556,7 @@ footer .wrap .footer_bottom p{
     font-size: 1.5rem;
 }
 
-@media screen and (max-width: 767px){
-    html{
-        font-size: 1.8208vw;
-    }
-
-    p{
-        line-height: 200%;
-    }
-
-    .pc_only{
-        display: none;
-    }
-    
-    .sp_only{
-        display: block;
-    }
-    
-    .pc_flex{
-        display: none !important;
-    }
-    
-    .sp_flex{
-        display: flex;
-    }
-
-    .title_small{
-        margin-left: 0rem;
-        width: 15.5rem;
-        transform: translateY(0rem);
-    }
-
+@media screen and (max-width: 1190px){
     .footer_contact {
         overflow: hidden;
         width: 100%;
@@ -665,6 +676,40 @@ footer .wrap .footer_bottom p{
         right: 0;
         width: 140px
     }
+}
+
+@media screen and (max-width: 767px){
+    html{
+        font-size: 1.8208vw;
+    }
+
+    p{
+        line-height: 200%;
+    }
+
+    .pc_only{
+        display: none;
+    }
+    
+    .sp_only{
+        display: block;
+    }
+    
+    .pc_flex{
+        display: none !important;
+    }
+    
+    .sp_flex{
+        display: flex;
+    }
+
+    .title_small{
+        margin-left: 0rem;
+        width: 15.5rem;
+        transform: translateY(0rem);
+    }
+
+    
 
     #media{
         padding: 2rem 0;

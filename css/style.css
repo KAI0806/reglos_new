@@ -118,7 +118,7 @@ body{
         background-color: #fff
     }
     .contents_area {
-        min-width: 1200px;
+        min-width: 100%;
         margin: 0 auto;
         z-index: 100;
         position: relative
@@ -275,7 +275,7 @@ body{
     .main_v_area_wrap {
         height: 100vh;
         width: 100%;
-        min-width: 1200px;
+        min-width: 100%;
         position: relative
     }
     .main_v_area_wrap.second {
@@ -480,6 +480,85 @@ body{
     }
     .contents_inner {
         padding-top: 80px
+    }
+
+    #scroll_down {
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: 0;
+        transition: transform 1s cubic-bezier(.16, 1, .21, 1), opacity 1s cubic-bezier(.16, 1, .21, 1)
+    }
+    #scroll_down .arrow {
+        width: 13px;
+        margin: auto;
+        position: absolute;
+        bottom: 15px
+    }
+    #scroll_down .vertical {
+        height: 75px;
+        overflow: hidden;
+        width: 2px;
+        margin: auto
+    }
+    #scroll_down a span {
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 25px;
+        height: 45px;
+        margin-left: -12px;
+        border: 1px solid #fff;
+        border-radius: 50px;
+        box-sizing: border-box
+    }
+    #scroll_down a span::before {
+        position: absolute;
+        top: 8px;
+        left: 54%;
+        content: '';
+        width: 5px;
+        height: 5px;
+        margin-left: -3px;
+        background-color: white;
+        border-radius: 100%;
+        -webkit-animation: sdb10 2s infinite;
+        animation: sdb10 2s infinite;
+        box-sizing: border-box
+    }
+    @-webkit-keyframes sdb10 {
+        0% {
+            -webkit-transform: translate(0, 0);
+            opacity: 0
+        }
+        40% {
+            opacity: 1
+        }
+        80% {
+            -webkit-transform: translate(0, 20px);
+            opacity: 0
+        }
+        100% {
+            opacity: 0
+        }
+    }
+    @keyframes sdb10 {
+        0% {
+            transform: translate(0, 0);
+            opacity: 0
+        }
+        40% {
+            opacity: 1
+        }
+        80% {
+            transform: translate(0, 20px);
+            opacity: 0
+        }
+        100% {
+            opacity: 0
+        }
     }
 }
 
@@ -917,6 +996,86 @@ body{
         transform: scale(2);
         top: 105px
     }
+
+    #scroll_down {
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -2px;
+        transition: transform 1s cubic-bezier(.16, 1, .21, 1), opacity 1s cubic-bezier(.16, 1, .21, 1)
+    }
+    #scroll_down .arrow {
+        width: 13px;
+        margin: auto;
+        position: absolute;
+        bottom: 15px
+    }
+    #scroll_down .vertical {
+        height: 75px;
+        overflow: hidden;
+        width: 2px;
+        margin: auto
+    }
+    #scroll_down a span {
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 25px;
+        height: 45px;
+        margin-left: -12px;
+        border: 1px solid white;
+        border-radius: 50px;
+        box-sizing: border-box
+    }
+    #scroll_down a span::before {
+        position: absolute;
+        top: 8px;
+        left: 52%;
+        content: '';
+        width: 5px;
+        height: 5px;
+        margin-left: -3px;
+        background-color: white;
+        border-radius: 100%;
+        -webkit-animation: sdb10 2s infinite;
+        animation: sdb10 2s infinite;
+        box-sizing: border-box
+    }
+    @-webkit-keyframes sdb10 {
+        0% {
+            -webkit-transform: translate(0, 0);
+            opacity: 0
+        }
+        40% {
+            opacity: 1
+        }
+        80% {
+            -webkit-transform: translate(0, 20px);
+            opacity: 0
+        }
+        100% {
+            opacity: 0
+        }
+    }
+    @keyframes sdb10 {
+        0% {
+            transform: translate(0, 0);
+            opacity: 0
+        }
+        40% {
+            opacity: 1
+        }
+        80% {
+            transform: translate(0, 20px);
+            opacity: 0
+        }
+        100% {
+            opacity: 0
+        }
+    }
+}
     
 
 @media screen and (max-width:480px) {
@@ -1087,10 +1246,6 @@ mark {
 
 a {
     text-decoration: none
-}
-
-a:hover {
-    color: #88724a
 }
 
 footer ul {
