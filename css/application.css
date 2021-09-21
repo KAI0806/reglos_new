@@ -9,6 +9,14 @@ body{
     margin: 0;
 }
 
+main{
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
 a{
     text-decoration: none;
     color: #202253;
@@ -79,6 +87,7 @@ p{
 header {
     background: white;
     height: 7rem;
+    z-index: 10000;
 }
 
 header .wrap{
@@ -680,9 +689,13 @@ footer .wrap .footer_bottom p{
     }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px){    
     html{
         font-size: 1.8208vw;
+    }
+
+    h3{
+        font-size: 3.5rem;
     }
 
     p{
@@ -709,6 +722,186 @@ footer .wrap .footer_bottom p{
         margin-left: 0rem;
         width: 15.5rem;
         transform: translateY(0rem);
+    }
+
+    header .wrap{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    header nav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    header .header_logo{
+        height: 6rem;
+    }
+
+    header nav ul li a{
+        font-size: 3rem;
+    }
+
+    #nav{
+        padding: 7rem 0 0 0;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        right: -100%;
+        top: 0;
+        background: white;
+        transition: all .7s ease-in-out;
+        z-index: 1;
+        opacity: 0;
+        overflow-y: scroll;
+    }
+
+    #nav h3{
+        font-size: 3rem;
+        position: absolute;
+        top: 1.8rem;
+        left: 2rem;
+    }
+
+    #nav .media_arrow{
+        height: 2rem;
+        margin-left: .5rem;
+    }
+
+    #nav h3::before{
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: -8rem;
+        height: .5px;
+        width: 6rem;
+        background: #07192F;
+    }
+
+    #nav .nav_top{
+        background: #07192F;
+    }
+
+    #nav .nav_top ul{
+        width: 90%;
+        margin: auto;
+    }
+
+    #nav .nav_top ul li{
+        padding: 3rem 2rem;
+    }
+    
+    #nav .nav_top ul li a{
+        color: white;
+    }
+
+    #nav ul .border{
+        border-bottom: 1px solid white;
+    }
+
+    #nav .nav_bottom{
+        width: 90%;
+        margin: auto;
+        padding: 3rem 0;
+    }
+
+    #nav .nav_bottom div{
+        padding-left: 2rem;
+    }
+
+    #nav .nav_bottom .nav_logo{
+        height: 7rem;
+        margin-bottom: 3rem;
+    }
+
+    #nav .nav_bottom p{
+        font-size: 1.7rem;
+    }
+
+    #nav .nav_bottom .link{
+        border-top: 1px solid #07192F;
+        border-bottom: 1px solid #07192F;
+        margin: 3rem 0;
+        padding: 3rem 2rem;
+    }
+
+    #nav .nav_bottom div li{
+        padding: .5rem 0;
+    }
+
+    #nav .nav_bottom div li a{
+        font-size: 1.7rem;
+        color: #07192F;
+    }
+
+    #hamburger {
+        width: 8rem;
+        height: 7rem;
+        transition: all 1s ease-out;
+        background: #07192F;
+        position: relative;
+        z-index: 1;
+    }
+
+    .inner_line {
+        display: block;
+        position: absolute;
+        left: 2rem;
+        width: 4.5rem;
+        height: 3px;
+        background-color: white;
+        transition: all 1s ease-out;
+    }
+
+    #line1 {
+        top: 30%;
+    }
+
+    #line2 {
+        top: 45%;
+    }
+
+    #line3 {
+        bottom: 30%;
+        width: 3rem;
+    }
+
+    .hidden{
+        overflow: hidden;
+    }
+
+    .in{
+        transform: translateX(-100%);
+        opacity: 1 !important;
+    }
+
+    .line_1,.line_2,.line_3{
+        background: white;
+        z-index: 100;
+    }
+
+    .line_1 {
+        transform: translateY(1.2rem) rotate(-45deg);
+        top: 0;
+    }
+
+    .line_2 {
+        opacity: 0;
+    }
+    
+    .line_3 {
+        transform: translateY(-1.2rem) rotate(45deg);
+        bottom: 0;
+        width: 4.5rem !important;
+    }
+
+    #kv{
+        height: 13rem;
+        margin-bottom: 5rem;
     }
 
     
@@ -771,6 +964,7 @@ footer .wrap .footer_bottom p{
 
     footer .wrap .foot_banner{
         margin: 2rem 0;
+        height: 12rem;
     }
 
     footer .wrap .copylight{

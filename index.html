@@ -61,7 +61,7 @@
 
 </head>
 
-<body>
+<body id="scroll" ontouchstart="">
     <div class="container">
         <style>
             .loading {
@@ -79,7 +79,7 @@
         <header>
             <div class="wrap">
                 <a href="index.html">
-                    <img src="img/top/top-logo_white.svg" alt="reglos" width="170px">
+                    <img class="header_logo" src="img/top/top-logo_white.svg" alt="reglos" width="170px">
                 </a>
                 <ul class="header_nav pc_flex">
                     <li><a class="is_current" href="index.html">ホーム</a></li>
@@ -98,6 +98,48 @@
                     <img src="img/head_contact.svg" alt="">
                     お問い合わせ
                 </a>
+
+                <nav id="nav" class="header_conotact sp_only">
+                    <h3 class="f_yumin">その社会に挑戦と革新を</h3>
+                    <div class="nav_top">
+                        <ul>
+                            <li class="border"><a href="index.html">ホーム</a></li>
+                            <li class="border"><a href="about.html">企業情報</a></li>
+                            <li class="border"><a href="service.html">事業内容</a></li>
+                            <li class="border"><a href="about.html">制作事例</a></li>
+                            <li class="border"><a href="about.html">採用情報</a></li>
+                            <li><a href="contact.html">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="nav_bottom">
+                        <div>
+                            <img class="nav_logo" src="img/top/top-logo_white.svg" alt="REGLOS">
+                            <p>
+                                〒104-0041 東京都中央区新富1-1-7BizSQUARE銀座 6階
+                                <br/>TEL：<a href="tel:03-5244-9545">03-5244-9545</a>
+                            </p>
+                        </div>
+                        <div class="link">
+                            <ul>
+                                <li><a href="">Wevies (ウェビーズ)</a><img class="media_arrow" src="img/media_arrow.svg" alt=""></li>
+                                <li><a href="">Selectia (セレクティア)</a><img class="media_arrow" src="img/media_arrow.svg" alt=""></li>
+                                <li><a href="">Creative Concierge (クリエイティブ コンシェルジュ)</a><img class="media_arrow" src="img/media_arrow.svg" alt=""></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="">プライバシーポリシー</a></li>
+                                <li><a href="">サイトマップ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div id="hamburger" class="sp_only">
+                    <span class="inner_line" id="line1"></span>
+                    <span class="inner_line" id="line2"></span>
+                    <span class="inner_line" id="line3"></span>
+                </div>
             </div>
         </header>
         <!--header-->
@@ -415,13 +457,13 @@
                     <br/>TEL：03-5244-9545
                 </p>
                 <a href=""><img class="foot_banner" src="img/top/topic001.jpg" alt="インタビュー"></a>
-                <p class="copylight">Copyright © 2020 REGLOS CO., Ltd.</p>
+                <p class="copylight">Copyright © 2021 REGLOS CO., Ltd.</p>
             </div>
         </footer>
     </div>
     <script src="js/library48be.js"></script>
     <script src="js/scripta4c2.js"></script>
-
+    <script src="/js/menu.js"></script>
 </body>
 
 </html>

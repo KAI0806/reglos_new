@@ -58,3 +58,34 @@
 #map{
     padding-bottom: 5rem;
 }
+
+@media screen and (max-width: 767px){
+    #company h2{
+        margin-bottom: 5rem;
+    }
+
+    #company h2::before{
+        height: 3px;
+        width: 30rem;
+        background: #07192F;
+    }
+
+    #company .comp_inner{
+        width: 90%;
+        margin: auto;
+    }
+
+    #company .comp_inner .wrap{
+        width: 100%;
+        padding: 0;
+    }
+
+    #company .comp_inner .wrap .row .row_left{
+        margin-left: 2rem;
+        width: 25%;
+    }
+
+    #company .comp_inner .wrap .row p{
+        font-size: 1.5rem
+    }
+}

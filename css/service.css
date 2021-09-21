@@ -242,3 +242,104 @@
 #service .selectia .logo{
     height: 15rem;
 }
+
+@media screen and (max-width: 767px){
+
+
+    #service_list{
+        display: block;
+        padding: 5rem;
+    }
+
+    #service_list h2{
+        text-align: center;
+        padding-bottom: 1rem;
+        margin-bottom: 5rem;
+    }
+
+    #service_list h2::before{
+        display: none;
+    }
+
+    #service_list h2::after{
+        position: absolute;
+        content: "";
+        width: 30rem;
+        height: 3px;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        bottom: 0;
+        background: #07192F;
+    }
+
+    #service_list .service_nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .border::before{
+        display: none;
+    }
+
+    #service_list .service_nav{
+        margin: auto;
+    }
+
+    #service_list a{
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .service_title h3{
+        font-size: 6rem;
+    }
+
+    .service_title p{
+        margin: 0;
+    }
+
+    #creator, #human, #service{
+        display: block;
+        padding-bottom: 5rem;
+    }
+
+    #creator .service_title, #human .service_title, #service .service_title{
+        width: 100%;
+        margin-bottom: 3rem;
+        padding: 3rem 0;
+    }
+
+    .service_wrap{
+        width: 100%;
+    }
+
+    .service_wrap .service_content p{
+        padding: 0 2rem;
+    }
+
+    .service_wrap .service_link{
+        padding: 0 7rem;
+    }
+
+    .service_wrap .service_link h4{
+        text-align: left;
+    }
+
+    .service_wrap .service_link a p{
+        width: 90%;
+    }
+
+    .wevies p, .cc p, .selectia p{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    #service .cc .logo{
+        height: 5.5rem;
+        margin: 3rem;
+    }
+}
