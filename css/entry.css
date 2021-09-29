@@ -95,6 +95,11 @@
     width: 65%;
 }
 
+#post{
+    margin-left: 1rem;
+    width: 61.7%;
+}
+
 label{
     font-size: 2rem;
 }

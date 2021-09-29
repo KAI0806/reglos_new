@@ -161,16 +161,9 @@
                 <div class="name">
                     <p class="left">郵便番号<br/><span class="red">[必須]</span></p>
                     <div class="right flex">
-                        <div>
-                            <label for="post01">〒</label>
-                            <input id="post01" name="郵便番号" type="tel" maxlength="3" placeholder="例)104" data-formrun-required>
-                            <div class="red" data-formrun-show-if-error="郵便番号">郵便番号を正しく入力してください</div>
-                        </div>
-                        <div>
-                            <label for="post02">ー</label>
-                            <input id="post02" name="郵便番号" type="tel" maxlength="4" placeholder="例)0041" data-formrun-required>
-                            <div class="red" data-formrun-show-if-error="郵便番号">郵便番号を正しく入力してください</div>
-                        </div>
+                        <label for="post">〒</label>
+                        <input id="post" name="郵便番号" type="tel" data-formrun-type="postal-code-jp" placeholder="例)1040041" data-formrun-required>
+                        <div class="red" data-formrun-show-if-error="郵便番号">郵便番号を正しく入力してください</div>
                     </div>
                     
                 </div>
@@ -178,7 +171,7 @@
                 <div class="name">
                     <label class="left" for="address">住所<br/><span class="red">[必須]</span></label>
                     <div class="right flex">
-                        <input id="address" name="住所" type="text" placeholder="例)東京都中央区新富1-1-7BizSQUARE銀座 6階" data-formrun-required>
+                        <input id="address" name="住所" type="text" data-formrun-type="region locality street-address" placeholder="例)東京都中央区新富1-1-7BizSQUARE銀座 6階" data-formrun-required>
                         <div class="red" data-formrun-show-if-error="住所">住所を入力してください</div>
                     </div>
                 </div>
