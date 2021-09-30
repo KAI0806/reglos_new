@@ -216,3 +216,45 @@ input{
     color: blue;
     text-decoration:underline;
 }
+
+@media screen and (max-width: 767px){
+    #contact_kv{
+        margin-bottom: 5rem;
+    }
+
+    .contact_title{
+        margin-bottom: 5rem;
+    }
+
+    #title{
+        margin-bottom: 0;
+    }
+
+    #title p{
+        margin-bottom: 0;
+    }
+
+    #form{
+        width: 90%;
+    }
+
+    #first_name, #second_name, #sei, #mei{
+        width: 60%;
+    }
+
+    #form .name div{
+        padding: 0;
+    }
+
+    #form .name > div{
+        padding: 1rem 0 1rem 1rem;
+    }
+
+    #address, #tel, #mail, #time, #first_choice, #second_choice, #content, #company, #department, #director{
+        width: 86.5%;
+    }
+
+    #post{
+        width: 78.8%;
+    }
+}
