@@ -83,7 +83,7 @@
     border-bottom: 1px solid #707070;
 }
 
-#form .name div{
+#form .name > div{
     padding: 1rem 0 1rem 2rem;
 }
 
@@ -93,6 +93,10 @@
 
 #address, #tel, #mail, #time, #first_choice, #second_choice, #content, #company, #department, #director{
     width: 65%;
+}
+
+#second_name, #sei{
+    margin-right: 2rem;
 }
 
 #post{
@@ -117,7 +121,7 @@ fieldset{
 }
 
 fieldset label{
-    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 input{
@@ -194,6 +198,7 @@ input{
     content: ">";
     font-size: 2rem;
     right: 5rem;
+    top: 30%;
 }
 
 #form .policy p{
@@ -218,7 +223,15 @@ input{
 }
 
 @media screen and (max-width: 767px){
+    h2{
+        font-size: 4.5rem;
+    }
+
     #contact_kv{
+        margin-bottom: 5rem;
+    }
+
+    #entry_kv .kv_img{
         margin-bottom: 5rem;
     }
 
@@ -236,10 +249,15 @@ input{
 
     #form{
         width: 90%;
+        margin-bottom: 5rem;
     }
 
     #first_name, #second_name, #sei, #mei{
         width: 60%;
+    }
+
+    #second_name, #sei{
+        margin-right: 0;
     }
 
     #form .name div{
@@ -256,5 +274,25 @@ input{
 
     #post{
         width: 78.8%;
+    }
+
+    fieldset .flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        
+    }
+
+    .submit::before{
+        right: 3rem;
+        top: 30%;
+    }
+
+    #year, #month, #day{
+        width: 41.5%;
+    }
+
+    .file label{
+        font-size: 1.6rem;
     }
 }
