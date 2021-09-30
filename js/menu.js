@@ -3,11 +3,10 @@ function hamburger(){
     document.getElementById('line2').classList.toggle('line_2');
     document.getElementById('line3').classList.toggle('line_3');
     document.getElementById('nav').classList.toggle('in');
-    document.getElementById('scroll').classList.toggle('hidden');
   };
   document.getElementById('hamburger').addEventListener('click',function(){
     hamburger();
   });
-  document.getElementById('nav').addEventListener('click',function(){
-    hamburger();
-  });
+  // document.getElementById('nav').addEventListener('click',function(){
+  //   hamburger();
+  // });

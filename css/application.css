@@ -56,6 +56,36 @@ p{
     line-height: 300%;
 }
 
+details summary {
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary img{
+    position: absolute;
+    right: 2rem;
+    height: 3.5rem;
+}
+
+details[open] ul {
+    animation: fadeIn 0.5s ease;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; /* 透明 */
+      transform: translateY(-10px); /* 上から表示 */
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
 .f_yumin {
     font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif
 }
@@ -734,6 +764,11 @@ footer .wrap .footer_bottom p{
         width: 15.5rem;
         transform: translateY(0rem);
     }
+    
+    header{
+        position: fixed;
+        top: 0;
+    }
 
     header .wrap{
         padding: 0;
@@ -753,14 +788,14 @@ footer .wrap .footer_bottom p{
         height: 6rem;
     }
 
-    header nav ul li a{
+    header nav ul li a, summary{
         font-size: 3rem;
     }
 
     #nav{
         padding: 7rem 0 0 0;
         position: fixed;
-        height: 100vh;
+        min-height: calc(100vh - 7rem);
         width: 100%;
         right: -100%;
         top: 0;
@@ -768,9 +803,14 @@ footer .wrap .footer_bottom p{
         transition: all .7s ease-in-out;
         z-index: 1;
         opacity: 0;
-        overflow-y: scroll;
+        overflow: scroll;
         line-height: 1.2;
     }
+
+    .nav_wrap{
+        overflow: scroll;
+    }
+
 
     #nav h3{
         font-size: 3rem;
@@ -807,7 +847,7 @@ footer .wrap .footer_bottom p{
         padding: 3rem 2rem;
     }
     
-    #nav .nav_top ul li a{
+    #nav .nav_top ul li a, summary{
         color: white;
     }
 
@@ -861,6 +901,7 @@ footer .wrap .footer_bottom p{
         z-index: 1;
     }
 
+
     .inner_line {
         display: block;
         position: absolute;
@@ -882,10 +923,6 @@ footer .wrap .footer_bottom p{
     #line3 {
         bottom: 30%;
         width: 3rem;
-    }
-
-    .hidden{
-        overflow: hidden;
     }
 
     .in{
@@ -917,8 +954,6 @@ footer .wrap .footer_bottom p{
         height: 13rem;
         margin-bottom: 5rem;
     }
-
-    
 
     #media{
         padding: 2rem 0;
@@ -987,5 +1022,13 @@ footer .wrap .footer_bottom p{
 
     footer .wrap .copylight{
         text-align: right;
+    }
+
+    #nav .nav_top ul li details ul li{
+        padding: 3rem 1rem 0 1rem;
+    }
+
+    header nav ul li details ul li a{
+        font-size: 2rem;
     }
 }
