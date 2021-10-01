@@ -730,7 +730,7 @@ footer .wrap .footer_bottom p{
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1365px){
+@media screen and (min-width:768px) and (max-width:1024px){
     html{
         font-size: 0.8208vw;
     }
@@ -790,6 +790,97 @@ footer .wrap .footer_bottom p{
 
     footer .wrap .footer_top .footer_nav{
         width: 67%;
+    }
+
+    footer .wrap .footer_top .footer_nav div{
+        width: 20%;
+    }
+
+    footer .wrap .footer_bottom .foot_right img{
+        width: 35rem;
+    }
+
+    footer .wrap .footer_bottom .foot_right .right_content{
+        width: 45%;
+    }
+
+    footer .wrap .footer_bottom{
+        padding-bottom: 5rem;
+    }
+
+    #kv{
+        margin-bottom: 8rem;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:769px){
+    html{
+        font-size: 0.8208vw;
+    }
+
+    .pad_none{
+        display: none !important;
+    }
+
+    header{
+        height: 9rem;
+    }
+
+    header .wrap .entry_link{
+        width: 32%;
+    }
+
+    header .wrap .header_nav{
+        padding: 0;
+    }
+
+    #media{
+        padding: 2rem 0;
+    }
+
+    #media .wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    #media .media_content{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #media img{
+        position: relative;
+        width: 42%;
+        right: unset;
+        top: unset;
+    }
+
+    #media .media_content h2{
+        font-size: 3rem;
+        padding-right: 2rem;
+        margin-right: 2rem;
+    }
+
+    #media .media_content .media_link{
+        padding: 0;
+        margin-top: 1rem;
+    }
+
+    #media .media_content .media_link p{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    footer .wrap .footer_top{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    footer .wrap .footer_top .footer_nav{
+        width: 80%;
     }
 
     footer .wrap .footer_top .footer_nav div{
