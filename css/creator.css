@@ -221,3 +221,55 @@
 #recruit .wrap table tr .left{
     background: #F1F1F1;
 }
+
+@media screen and (min-width:768px) and (max-width:1365px){
+    p{
+        line-height: 200%;
+    }
+
+    #recruit_kv .kv_img{
+        margin-bottom: 10rem;
+    }
+
+    #message{
+        width: 80%;
+        margin-bottom: 15rem;
+    }
+
+    #message h2{
+        margin-bottom: 5rem;
+    }
+
+    #feature{
+        margin-bottom: 15rem;
+    }
+
+    #feature .feature_content div img{
+        height: unset;
+        width: 18rem;
+    }
+
+    #recruit{
+        margin-bottom: 15rem;
+    }
+
+    #recruit .wrap{
+        width: 80%;
+    }
+
+    #recruit h2{
+        margin-bottom: 5rem;
+    }
+
+    #recruit .wrap .content{
+        margin-bottom: 5rem;
+    }
+
+    #recruit .recruit_contact{
+        margin-top: 5rem;
+    }
+
+    #recruit .recruit_contact a{
+        font-size: 1.5rem;
+    }
+}

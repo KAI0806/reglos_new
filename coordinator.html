@@ -59,16 +59,22 @@
     <header>
         <div class="wrap">
             <a href="index.html">
-                <img src="img/top/top-logo_white.svg" alt="reglos" width="170px">
+                <img class="header_logo" src="img/top/top-logo_white.svg" alt="reglos" width="170px">
             </a>
-            <div class="header_nav">
-                <a href="index.html">ホーム</a>
-                <a href="about.html">会社概要</a>
-                <a href="service.html">事業内容</a>
-                <a href="">制作事例</a>
-                <a class="is_current" href="">採用情報</a>
-            </div>
-            <div class="entry_link">
+            <ul class="header_nav pc_flex">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="about.html">会社概要</a></li>
+                <li><a href="service.html">事業内容</a></li>
+                <li><a href="">制作事例</a></li>
+                <li class="trigger">
+                    <a class="is_current" href="">採用情報</a>
+                    <ul>
+                        <li><a href="creator.html">クリエイター</a></li>
+                        <li><a href="coordinator.html">人材コーディネーター</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="entry_link pc_flex">
                 <a href="creator_contact.html" class="head_contact">
                     <small>ENTRY</small>
                     <br/>クリエイター
@@ -78,14 +84,64 @@
                     <br/>人材コーディネーター
                 </a>
             </div>
+
+            <nav id="nav" class="header_conotact sp_only">
+                <h3 class="f_yumin">その社会に挑戦と革新を</h3>
+                <div class="nav_top">
+                    <ul>
+                        <li class="border"><a href="index.html">ホーム</a></li>
+                        <li class="border"><a href="about.html">会社概要</a></li>
+                        <li class="border"><a href="service.html">事業内容</a></li>
+                        <li class="border"><a href="about.html">制作事例</a></li>
+                        <li class="border">
+                            <details>
+                                <summary>採用情報<img src="img/plus.svg" alt=""></summary>
+                                <ul>
+                                    <li><a href="creator.html">ー　クリエイター</a></li>
+                                    <li><a href="coordinator.html">ー　人材コーディネーター</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav_bottom">
+                    <div>
+                        <img class="nav_logo" src="img/top/top-logo_white.svg" alt="REGLOS">
+                        <p>
+                            〒104-0041 東京都中央区新富1-1-7BizSQUARE銀座 6階
+                            <br/>TEL：<a href="tel:03-5244-9545">03-5244-9545</a>
+                        </p>
+                    </div>
+                    <div class="link">
+                        <ul>
+                            <li><a href="">Wevies (ウェビーズ)</a><img class="media_arrow" src="img/media_arrow.svg" alt=""></li>
+                            <li><a href="">Selectia (セレクティア)</a><img class="media_arrow" src="img/media_arrow.svg" alt=""></li>
+                            <li><a href="">Creative Concierge (クリエイティブ コンシェルジュ)</a><img class="media_arrow" src="img/media_arrow.svg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="">プライバシーポリシー</a></li>
+                            <li><a href="">サイトマップ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="hamburger" class="sp_only">
+                <span class="inner_line" id="line1"></span>
+                <span class="inner_line" id="line2"></span>
+                <span class="inner_line" id="line3"></span>
+            </div>
         </div>
     </header>
-
+    
     <main>
         <section id="recruit_kv">
             <img class="kv_img" src="img/creator/coordinator_kv.jpg" alt="クリエイター募集">
 
-            <div class="scroll">
+            <div class="scroll pad_none">
                 <a href="#message">SCROLL</a>
             </div>
         </section>
@@ -209,20 +265,22 @@
         </section>
 
         <section id="media">
-            <div class="media_content">
-                <h2>
-                    REGLOS
-                    <br>RECOMEND
-                    <br>NEWS
-                </h2>
-                <div class="media_link">
-                    <a href=""><h4>Media掲載</h4></a>
-                    <p>弊社BPOサービス記事が
-                        <br>紹介されました。
-                    </p>
+            <div class="wrap">
+                <div class="media_content">
+                    <h2>
+                        REGLOS
+                        <br>RECOMEND
+                        <br>NEWS
+                    </h2>
+                    <div class="media_link">
+                        <a href=""><h4>Media掲載</h4></a>
+                        <p>弊社BPOサービス記事が
+                            <br>紹介されました。
+                        </p>
+                    </div>
                 </div>
+                <img src="img/media_list.png" alt="メディア一覧">
             </div>
-            <img src="img/media_list.png" alt="メディア一覧">
         </section>
 
         <div class="footer_contact">
@@ -242,7 +300,7 @@
     </main>
 
     <footer>
-        <div class="wrap">
+        <div class="wrap pc_only">
             <div class="footer_top">
                 <a href="index.html"><img src="img/top/top-logo_white.svg" alt="reglos"></a>
                 <div class="footer_nav">
@@ -259,9 +317,9 @@
                     <div>
                         <a href="service.html">事業内容</a>
                         <ul>
-                            <li><a href="">ー クリエイター育成事業</a></li>
-                            <li><a href="">ー 人材教育事業</a></li>
-                            <li><a href="">ー 自社サービス<br>（WEB・BPO・EC）</a></li>
+                            <li><a href="it_service.html">ー クリエイター育成事業</a></li>
+                            <li><a href="it_service.html">ー 人材教育事業</a></li>
+                            <li><a href="it_service.html">ー 自社サービス<br>（WEB・BPO・EC）</a></li>
                         </ul>
                     </div>
                     <div>
@@ -298,6 +356,17 @@
                 </div>
             </div>
         </div>
+        <div class="wrap sp_only">
+            <a href="index.html"><img class="footer_logo" src="img/top/top-logo_white.svg" alt="reglos"></a>
+            <p>
+                〒104-0041
+                <br/>東京都中央区新富1-1-7BizSQUARE銀座 6階
+                <br/>TEL：03-5244-9545
+            </p>
+            <a href=""><img class="foot_banner" src="img/top/topic001.jpg" alt="インタビュー"></a>
+            <p class="copylight">Copyright © 2021 REGLOS CO., Ltd.</p>
+        </div>
     </footer>
+    <script src="/js/menu.js"></script>
 </body>
 </html>

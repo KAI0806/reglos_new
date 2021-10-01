@@ -243,6 +243,33 @@
     height: 15rem;
 }
 
+@media screen and (min-width:768px) and (max-width:1365px){
+    #service_list{
+        display: block;
+        padding: 5rem;
+    }
+
+    #service_list h2::before{
+        position: absolute;
+        content: "";
+        left: 15%;
+        margin-right: -50%;
+        transform: translate(50%, 50%);
+        bottom: 50%;
+        height: 1px;
+        width: 12rem;
+        background: #9093BB;
+    }
+
+    #service_list h2{
+        margin-bottom: 2rem;
+    }
+
+    .service_nav{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 767px){
 
 

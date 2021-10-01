@@ -319,6 +319,42 @@
     font-size: 1.5rem;
 }
 
+@media screen and (min-width:768px) and (max-width:1365px){
+    #thought{
+        width: 80%;
+        margin-bottom: 15rem;
+    }
+
+    #service{
+        margin-bottom: 15rem;
+    }
+
+    #service .wrap{
+        width: 80%;
+    }
+
+    #service .service_list{
+        margin-bottom: 5rem;
+    }
+
+    #news{
+        padding: 15rem 0;
+    }
+
+    #news .news_inner{
+        width: 80%;
+    }
+
+    #other{
+        padding-bottom: 15rem;
+    }
+
+    #other .wrap{
+        width: 80%;
+    }
+
+}
+
 @media screen and (max-width: 767px){
     #thought{
         width: 85%;

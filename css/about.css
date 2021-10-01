@@ -59,6 +59,13 @@
     padding-bottom: 5rem;
 }
 
+@media screen and (min-width:768px) and (max-width:1365px){
+    #company .comp_inner .wrap{
+        width: 80%;
+        padding: 10rem 0;
+    }
+}
+
 @media screen and (max-width: 767px){
     #company h2{
         margin-bottom: 5rem;
