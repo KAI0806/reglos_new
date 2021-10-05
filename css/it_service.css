@@ -46,25 +46,25 @@
     right: 2rem;
 }
 
-#wevies{
+.service{
     max-width: 1440px;
     width: 80%;
     margin: auto;
     margin-bottom: 15rem;
 }
 
-#wevies h4{
+.service h4{
     font-weight: 100;
     text-align: center;
     margin-bottom: 2rem;
 }
 
-#wevies h2{
+.service h2{
     text-align: center;
     margin-bottom: 10rem;
 }
 
-#wevies h2 small{
+.service h2 small{
     color: black;
     font-size: 2.5rem;
 }
@@ -74,25 +74,25 @@
     margin: 2rem auto;
 }
 
-#wevies .wrap{
+.service .wrap{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#wevies .wrap p{
+.service .wrap p{
     margin-bottom: 4rem;
 }
 
-#wevies .wrap .sec_contact{
+.service .wrap .sec_contact{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#wevies .wrap .sec_contact a{
+.service .wrap .sec_contact a{
     width: 30%;
     padding: 2rem 0;
     background: #07192F;
@@ -104,7 +104,7 @@
     border: 1px solid #07192F;
 }
 
-#wevies .wrap .sec_contact a img{
+.service .wrap .sec_contact a img{
     position: absolute;
     top: 50%;
     margin-top: -3%;
@@ -113,7 +113,7 @@
     height: 3rem;
 }
 
-#wevies .wrap .sec_contact .white{
+.service .wrap .sec_contact .white{
     background: white;
     color: #07192F;
 }
@@ -148,25 +148,25 @@
         margin: .5rem 0;
     }
 
-    #wevies{
+    .service{
         width: 90%;
         margin-bottom: 8rem;
     }
 
-    #wevies .wrap .sec_contact{
+    .service .wrap .sec_contact{
         flex-direction: column;
     }
 
-    #wevies .wrap .sec_contact a{
+    .service .wrap .sec_contact a{
         width: 100%;
     }
 
-    #wevies h4{
+    .service h4{
         margin-bottom: .5rem;
         font-size: 3rem;
     }
 
-    #wevies h2{
+    .service h2{
         font-size: 2.6rem;
         margin-bottom: 0;
     }
@@ -181,7 +181,7 @@
         margin: 3rem 0;
     }
 
-    #wevies .wrap p{
+    .service .wrap p{
         margin-bottom: 5rem;
     }
 }
