@@ -127,7 +127,7 @@ header {
 header .wrap{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 95%;
     margin: auto;
     padding: .5rem 0;
@@ -136,10 +136,9 @@ header .wrap{
 header .wrap .header_nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 40%;
-    height: 6rem;
-    margin: 0;
+    margin-top: 2rem;
 }
 
 header .wrap .header_nav a{
@@ -185,47 +184,33 @@ header .wrap .header_nav .is_current::after{
     opacity: 1;
 }
 
-.header_nav li{
+.header_nav > li{
     position: relative;
-    height: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 13rem;
+    text-align: center;
 }
 
 .header_nav li ul{
-    position: absolute;
-    height: 0;
-    width: max-content;
-    bottom: -10rem;
-    overflow: hidden;
-    transition: .5s ease-in-out;
-}
-
-.header_nav li .trigger {
-    height: 0;
-    overflow: hidden;
-    transition: .5s ease-in-out;
-    padding: .5rem;
-    border-bottom: 1px solid black;
-}
-
-.header_nav .trigger:hover > ul{
     background: white;
-    width: max-content;
-    bottom: -10rem;
-    padding: 1rem 2rem;
-    height: max-content;
-    transition: .5s ease-in-out;
+    margin-top: 2rem;
+    margin-left: -5rem;
+    width: 24rem;
+}
+
+.header_nav li li {
+    height: 0;
     overflow: hidden;
+    background: white;
+    transition: .5s;
 }
 
-.header_nav .trigger:hover > ul > li {
+
+.header_nav li:hover > ul > li {
     height: 5rem;
+    transform: translateY(50%);
     overflow: visible;
-    transition: .5s ease-in-out;
+    text-align: center;
 }
-
 
 header .wrap .head_contact{
     padding: .5rem 1rem;
@@ -234,6 +219,7 @@ header .wrap .head_contact{
     color: black;
     font-size: 1.5rem;
     transition: all .2s ease-in-out;
+    margin-top: 1.5rem;
 }
 
 header .wrap .head_contact:hover{
@@ -745,6 +731,19 @@ footer .wrap .footer_bottom p{
         width: 30%;
     }
 
+    header .wrap .header_nav{
+        padding: 0;
+        width: 50%;
+    }
+
+    .header_nav > li{
+        width: 8rem;
+    }
+
+    .header_nav li ul{
+        margin-left: -7.5rem
+    }
+
     #media{
         padding: 2rem 0;
     }
@@ -834,6 +833,23 @@ footer .wrap .footer_bottom p{
 
     header .wrap .header_nav{
         padding: 0;
+        width: 50%;
+    }
+
+    .header_nav > li{
+        width: 8rem;
+    }
+
+    header .wrap .header_nav{
+        margin-top: 2.5rem;
+    }
+
+    header .wrap .head_contact{
+        margin-top: 2.5rem;
+    }
+
+    .header_nav li ul{
+        margin-left: -7.5rem
     }
 
     #media{
