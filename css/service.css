@@ -17,9 +17,8 @@
     align-items: flex-end;
     width: 80%;
     max-width: 1440px;
-    margin-top: 35rem;
     margin: auto;
-    padding: 20rem 0;
+    padding: 15rem 0;
 }
 
 #service_list h2{
@@ -83,7 +82,7 @@
 }
 
 #creator, #human, #service{
-    padding-bottom: 35rem;
+    padding-bottom: 25rem;
     display: flex;
     justify-content: space-between;
     align-items: stretch;

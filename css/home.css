@@ -4,7 +4,7 @@
     max-width: 1440px;
     width: 60%;
     margin: auto;
-    margin-bottom: 35rem;
+    margin-bottom: 15rem;
 }
 
 #thought .wrap{
@@ -31,7 +31,7 @@
 /* サービス */
 
 #service{
-    margin-bottom: 35rem;
+    margin-bottom: 10rem;
 }
 
 
@@ -141,7 +141,7 @@
 /* news */
 #news{
     background: #FBFBFB;
-    padding: 35rem 0;
+    padding: 10rem 0 15rem 0;
 }
 
 #news .news_inner{
@@ -151,7 +151,7 @@
 }
 
 #news h2{
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 #news h2 small{
@@ -173,7 +173,7 @@
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 #news .news_list .news_content{
@@ -219,7 +219,7 @@
     position: absolute;
     width: 5rem;
     height: 5rem;
-    top: .5rem;
+    top: 0;
     right: -10rem;
     transition: all .2s ease-in-out;
 }
@@ -232,7 +232,7 @@
 /* その他 */
 #other{
     background: #FBFBFB;
-    padding-bottom: 35rem;
+    padding-bottom: 1   5rem;
 }
 
 #other h2{
@@ -386,7 +386,7 @@
     }
 
     #service{
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
     }
 
     #service .wrap{
@@ -442,7 +442,7 @@
     }
 
     #news{
-        padding: 10rem 0;
+        padding: 5rem 0;
     }
 
     #news .news_inner{
@@ -461,6 +461,7 @@
     #news h2{
         text-align: center;
         position: relative;
+        margin-bottom: 8rem;
     }
 
     #news h2::before{
@@ -492,7 +493,7 @@
     }
 
     #other{
-        padding-bottom: 10rem;
+        padding-bottom: 5rem;
     }
 
     #other .wrap{

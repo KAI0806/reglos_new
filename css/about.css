@@ -1,7 +1,7 @@
 @charset "UTF-8";
-#company{
+/* #company{
     padding-bottom: 5rem;
-}
+} */
 
 #company h2{
     text-align: center;
@@ -35,7 +35,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 20rem 0;
+    padding: 15rem 0;
 }
 
 #company .comp_inner .wrap .row{
@@ -55,9 +55,9 @@
     color: white;
 }
 
-#map{
+/* #map{
     padding-bottom: 5rem;
-}
+} */
 
 @media screen and (min-width:768px) and (max-width:1365px){
     #company .comp_inner .wrap{

@@ -981,9 +981,9 @@ body{
         height: 35px;
         width: 3000px!important
     }
-    .contents_inner {
+    /* .contents_inner {
         padding-top: 50px
-    }
+    } */
     #video-background {
         position: absolute;
         left: 50%
