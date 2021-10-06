@@ -11,6 +11,7 @@ body{
 
 main{
     overflow: hidden;
+    margin-top: 7rem;
 }
 
 ul{
@@ -149,7 +150,7 @@ header .wrap .header_nav{
     justify-content: space-between;
     align-items: flex-start;
     width: 40%;
-    margin-top: 1.5rem;
+    margin-top: 1.8rem;
 }
 
 header .wrap .header_nav a{
@@ -230,7 +231,7 @@ header .wrap .head_contact{
     color: black;
     font-size: 1.5rem;
     transition: all .2s ease-in-out;
-    margin-top: 1.5rem;
+    margin-top: 1.3rem;
 }
 
 header .wrap .head_contact:hover{
@@ -597,7 +598,7 @@ footer .wrap .footer_bottom .foot_right .right_content .bottom_nav a{
     color: white;
     font-size: 1.5rem;
     transition: all .2s ease-in-out;
-    margin-left: 7.5rem;
+    margin-left: 2.5rem;
 }
 
 footer .wrap .footer_bottom .foot_right .right_content .bottom_nav a:hover{
