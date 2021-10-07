@@ -7,6 +7,10 @@
     top: .3rem !important;
 }
 
+footer .wrap .footer_top .footer_nav div p{
+    line-height: 150%;
+}
+
 /* 想い */
 #thought{
     max-width: 1440px;

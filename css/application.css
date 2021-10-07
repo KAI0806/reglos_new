@@ -545,7 +545,8 @@ footer .wrap .footer_top .footer_nav div{
 }
 
 footer .wrap .footer_top .footer_nav div p{
-    line-height: 150%;
+    line-height: 100%;
+    margin-top: .5rem;
 }
 
 footer .wrap .footer_top .footer_nav div ul{
