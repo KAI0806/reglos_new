@@ -1,4 +1,12 @@
 @charset "UTF-8";
+.header_nav .trigger p{
+    margin-top: .3rem !important;
+}
+
+.header_nav .trigger::before{
+    top: .3rem !important;
+}
+
 /* 想い */
 #thought{
     max-width: 1440px;

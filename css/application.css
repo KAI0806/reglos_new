@@ -205,8 +205,9 @@ header .wrap .header_nav .is_current::after{
 .header_nav li ul{
     background: white;
     margin-top: 1.6rem;
-    margin-left: -5rem;
-    width: 24rem;
+    margin-left: -2.5rem;
+    width: 18rem;
+    box-shadow: 0 22px 6px rgba(0, 0, 0, 16%);
 }
 
 .header_nav li li {
@@ -216,12 +217,35 @@ header .wrap .header_nav .is_current::after{
     transition: .5s;
 }
 
+.header_nav .trigger{
+    position: relative;
+}
+
+.header_nav .trigger p{
+    font-size: 1.8rem;
+    line-height: 100%;
+    margin-top: .7rem;
+}
+
+.header_nav .trigger::before{
+    position: absolute;
+    content: url("../img/down_arrow.svg");
+    display: inline-block;
+    top: .8rem;
+    right: 0;
+    transition: all .5s ease-in-out;
+}
 
 .header_nav li:hover > ul > li {
     height: 5rem;
     transform: translateY(50%);
     overflow: visible;
     text-align: center;
+}
+
+.header_nav .trigger:hover:before{
+    opacity: 0;
+    transition: all .3s ease-in-out;
 }
 
 header .wrap .head_contact{
@@ -263,12 +287,12 @@ header .wrap .entry_link{
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    width: 23%;
+    width:15%;
 }
 
 header .wrap .entry_link a{
     text-align: center;
-    width: 43%;
+    width: 40%;
     margin-top: 0;
 }
 
@@ -520,6 +544,10 @@ footer .wrap .footer_top .footer_nav div{
     width: 15%;
 }
 
+footer .wrap .footer_top .footer_nav div p{
+    line-height: 150%;
+}
+
 footer .wrap .footer_top .footer_nav div ul{
     padding-left: .5rem;
     list-style: none;
@@ -766,6 +794,10 @@ footer .wrap .footer_bottom p{
 
     .header_nav li ul{
         margin-left: -7.5rem
+    }
+
+    .trigger::before{
+        right: -2rem;
     }
 
     #media{

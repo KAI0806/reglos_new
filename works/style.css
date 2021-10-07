@@ -804,9 +804,9 @@
         text-decoration: none
     }
     .works_detail_works {
-        width: auto;
+        width: 70%;
         position: relative;
-        margin: 0 auto 150px
+        margin: 10rem auto 150px
     }
     .works_detail_works .works_detail_inner {
         height: 800px;
@@ -957,7 +957,7 @@
         background-color: #e4e8e9
     }
     .works_detail_pager .works_detail_pager_inner {
-        width: auto;
+        width: 70%;
         margin: 0 auto;
         height: 180px;
         position: relative
@@ -1863,6 +1863,13 @@
         text-decoration: none
     }
     
+}
+
+.graphic_bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
 }
 
 .clearfix:after {
