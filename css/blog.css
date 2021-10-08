@@ -126,6 +126,7 @@
 
     #kv_blog .blog_title h2{
         font-size: 2.5rem;
+        margin-top: 1.5rem;
     }
 
     #kv_blog .blog_title p{
@@ -133,7 +134,7 @@
     }
 
     #blog_txt{
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
     }
 
     #blog_txt .table{
@@ -143,10 +144,15 @@
 
     #blog_txt h3{
         margin-bottom: 3rem;
+        font-size: 2.5rem;
     }
 
     #blog_txt .table p{
         width: 100%;
         margin: 0;
+    }
+
+    .breadcrumb{
+        width: 90%;
     }
 }

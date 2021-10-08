@@ -797,8 +797,9 @@ footer .wrap .footer_bottom p{
         margin-left: -7.5rem
     }
 
-    .trigger::before{
-        right: -2rem;
+    .header_nav .trigger::before{
+        right: -2.5rem;
+        top: .2rem;
     }
 
     #media{
