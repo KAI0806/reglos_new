@@ -17,7 +17,15 @@
 }
 
 #kv_blog .n00003{
-    background: url("../img/blogs/n00003.jpg") center center/cover no-repeat;
+    background: url("../img/blogs/n00003.jpg") center -18rem/cover no-repeat;
+}
+
+#kv_blog .n00002{
+    background: url("../img/blogs/n00002.jpg") center center/cover no-repeat;
+}
+
+#kv_blog .n00004{
+    background: url("../img/blogs/n00004.jpg") center -8rem/cover no-repeat;
 }
 
 #kv_blog .blog_title{
@@ -77,12 +85,17 @@
     justify-content: flex-start;
     width: 80%;
     margin: auto;
+    margin-bottom: 5rem;
 }
 
 .breadcrumb a, .breadcrumb p{
     font-size: 1.5rem;
     margin: 0;
     line-height: 100%;
+}
+
+.breadcrumb a{
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 1190px){
