@@ -1,0 +1,681 @@
+@charset "UTF-8";
+
+#recruit_kv{
+    height: 80rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7.5rem;
+    background: url("../img/recruit/recruit_kv.jpg") center center/cover no-repeat;
+}
+
+#recruit_kv h2{
+    font-size: 7rem;
+    font-weight: 900;
+    color: #171C5F;
+    line-height: 200%;
+    z-index: 1;
+}
+
+#recruit_kv h2 span{
+    position: relative;
+}
+
+#recruit_kv h2 span::before{
+    content: "";
+    position: absolute;
+    height: 2.7rem;
+    width: 100%;
+    bottom: -1rem;
+    right: 0;
+    z-index: -1;
+    background: #C8C8C8;
+}
+
+#about_creator{
+    max-width: 1440px;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 11.5rem;
+}
+
+#about_creator h3{
+    font-weight: 900;
+    color: #07192F;
+    text-align: center;
+    line-height: 55%;
+    position: relative;
+    margin-bottom: 9.5rem;
+}
+
+#about_creator h3 span{
+    color: #F1F1F1;
+    font-size: 1.9rem;
+}
+
+#about_creator h3::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 5.5rem;
+    background: #707070;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 50%);
+    bottom: -5rem;
+}
+
+#about_creator img{
+    width: 100%;
+    margin-bottom: 7.5rem;
+}
+
+#about_creator h4{
+    text-align: center;
+    font-size: 2.15rem;
+    line-height: 200%;
+    color: #171C5F;
+}
+
+#about_creator p{
+    line-height: 200%;
+    font-size: 2.3rem;
+}
+
+#about_creator p span{
+    font-weight: 900;
+}
+
+#about_creator .content{
+    padding-bottom: 9rem;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 9rem;
+}
+
+#about_creator .what_creator{
+    position: relative;
+}
+
+#about_creator .what_creator::before{
+    content: "";
+    position: absolute;
+    width: 22.8rem;
+    height: 18.2rem;
+    background-image: url("../img/other_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: .2;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 50%);
+    top: 0;
+}
+
+#about_creator .recruit_contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 10rem;
+}
+
+#about_creator .recruit_contact a{
+    width: 50%;
+    padding: 2rem 0;
+    background: #07192F;
+    color: white;
+    text-align: center;
+    font-size: 2.3rem;
+    margin: 0;
+    position: relative;
+}
+
+#about_creator .recruit_contact .white{
+    background: white;
+    color: #404040;
+    border: 1px solid #707070;
+}
+
+#about_creator .recruit_contact a img{
+    position: absolute;
+    top: 50%;
+    margin-top: -3%;
+    right: 5.5rem;
+    width: 3.5rem;
+    transition: all .3s ease-in-out;
+}
+
+#about_creator .recruit_contact a:hover .arrow{
+    right: 2.5rem;
+    transition: all .3s ease-in-out;
+}
+
+/* program */
+
+#program{
+    background: #F9F9F9;
+    padding: 11.5rem 0;
+}
+
+#program .wrap{
+    max-width: 1440px;
+    width: 60%;
+    margin: auto;
+}
+
+#program .wrap h4{
+    text-align: center;
+    font-size: 2.15rem;
+    line-height: 200%;
+    color: #171C5F;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 9.8rem;
+}
+
+#program .wrap > img{
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 12.5rem;
+}
+
+#program .wrap h4::before{
+    position: absolute;
+    content: "";
+    height: 38rem;
+    width: 100rem;
+    top: 15rem;
+    right: 0;
+    z-index: -1;
+    background: url("../img/recruit/program_bg.svg") center center/contain no-repeat;
+}
+
+#program .wrap > p{
+    font-size: 2.3rem;
+    line-height: 150%;
+    z-index: 1;
+}
+
+#program .wrap > p span{
+    color: #07192F;
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+}
+
+#program .wrap > p span::before{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    bottom: -.5rem;
+    right: 0;
+    z-index: -1;
+    background: #C8C8C8;
+}
+
+#program .wrap .content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8rem;
+}
+
+#program .wrap .content > div{
+    width: 45%;
+}
+
+#program .wrap .content h5{
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    background: #07192F;
+    padding: 1.5rem 0;
+}
+
+#program .wrap .content > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#program .wrap .content > div > div img{
+    margin: .5rem 0;
+    width: 100%;
+}
+
+#program .wrap .content > div > div .under_arrow{
+    width: 5.5rem;
+}
+
+#program .wrap .content > div > p{
+    font-size: 1.7rem;
+    line-height: 150%;
+}
+
+#program .wrap .content > div > p span{
+    font-weight: 600;
+}
+
+#program .wrap > h5{
+    background: #07192F;
+    width: 60%;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin: auto;
+    padding: 1.5rem 0;
+    margin-bottom: 4.5rem;
+}
+
+#program .recruit_contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 10rem;
+}
+
+#program .recruit_contact a{
+    width: 50%;
+    padding: 2rem 0;
+    background: #07192F;
+    color: white;
+    text-align: center;
+    font-size: 2.3rem;
+    margin: 0;
+    position: relative;
+}
+
+#program .recruit_contact .white{
+    background: white;
+    color: #404040;
+    border: 1px solid #707070;
+}
+
+#program .recruit_contact a img{
+    position: absolute;
+    top: 50%;
+    margin-top: -3%;
+    right: 5.5rem;
+    width: 3.5rem;
+    transition: all .3s ease-in-out;
+}
+
+#program .recruit_contact a:hover .arrow{
+    right: 2.5rem;
+    transition: all .3s ease-in-out;
+}
+
+/* thought */
+
+#thought{
+    margin: 11.5rem auto;
+    max-width: 1440px;
+    width: 60%;
+}
+
+#thought h4{
+    text-align: center;
+    font-size: 2.15rem;
+    line-height: 200%;
+    color: #171C5F;
+    margin-bottom: 5rem;
+}
+
+#thought p{
+    font-size: 2.3rem;
+    line-height: 150%;
+    width: 80%;
+    margin: auto
+}
+
+#thought h5{
+    font-size: 2.3rem;
+    text-align: center;
+    line-height: 180%;
+    margin-bottom: 10rem;
+}
+
+#thought img{
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+#thought .bold{
+    margin-top: 10rem;
+    text-align: center;
+}
+
+#thought .recruit_contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 10rem;
+}
+
+#thought .recruit_contact a{
+    width: 50%;
+    padding: 2rem 0;
+    background: #07192F;
+    color: white;
+    text-align: center;
+    font-size: 2.3rem;
+    margin: 0;
+    position: relative;
+}
+
+#thought .recruit_contact .white{
+    background: white;
+    color: #404040;
+    border: 1px solid #707070;
+}
+
+#thought .recruit_contact a img{
+    position: absolute;
+    top: 50%;
+    margin-top: -3%;
+    right: 5.5rem;
+    width: 3.5rem;
+    transition: all .3s ease-in-out;
+}
+
+#thought .recruit_contact a:hover .arrow{
+    right: 2.5rem;
+    transition: all .3s ease-in-out;
+}
+
+/* interview */
+
+#interview{
+    margin-bottom: 15rem;
+}
+
+#interview h4{
+    font-size: 2.3rem;
+    text-align: center;
+    line-height: 200%;
+    margin-bottom: 10rem;
+    color: #171C5F;
+}
+
+#interview h4 small{
+    font-size: 1.8rem;
+    color: #171C5F;
+}
+
+#interview .list{
+    max-width: 1440px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#interview .list .content{
+    width: 21%;
+    background: white;
+    transition: all .2s ease-in-out;
+}
+
+#interview .list .content:hover{
+    opacity: .5;
+    transition: all .2s ease-in-out;
+}
+
+#interview .list .content img{
+    width: 100%;
+}
+
+#interview .list .content h4{
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+#interview .list .content p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px){
+    #recruit_kv{
+        background: url("../img/recruit/recruit_bg_sp.jpg") center center/cover no-repeat;
+    }
+
+    #recruit_kv h2{
+        font-size: 3.5rem;
+    }
+
+    #recruit_kv h2 span::before{
+        height: 1.5rem;
+        bottom: -.5rem;
+    }
+
+    #about_creator{
+        width: 90%;
+        margin-bottom: 4rem;
+    }
+
+    #about_creator h3 span{
+        font-size: 1.65rem;
+    }
+
+    #about_creator img{
+        width: 100vw;
+        margin-left: -5.5%;
+        margin-bottom: 6rem;
+    }
+
+    #about_creator h4 span{
+        font-size: 2.8rem;
+    }
+
+    #about_creator h4{
+        text-align: left;
+    }
+
+    #about_creator p{
+        font-size: 1.7rem;
+        width: 95%;
+        margin: 1rem auto;
+    }
+
+    #about_creator .content{
+        padding-bottom: 3.5rem;
+        margin-bottom: 3.5rem;
+    }
+
+    #about_creator .recruit_contact{
+        margin-top: 6.5rem;
+        flex-direction: column;
+    }
+
+    #about_creator .recruit_contact a{
+        width: 100%;
+    }
+
+    #about_creator .recruit_contact .white{
+        width: calc(100% - 2px);
+    }
+
+    #about_creator .what_creator::before{
+        width: 24.8rem;
+        height: 20.2rem;
+    }
+
+    #program{
+        padding: 4rem 0;
+    }
+
+    #program .wrap{
+        width: 90%;
+    }
+
+    #program .wrap h4{
+        text-align: left;
+        margin-bottom: 3rem;
+    }
+
+    #program .wrap h4 b{
+        font-size: 2.75rem;
+    }
+
+    #program .wrap h4 span{
+        font-size: 1.8rem;
+    }
+
+    #program .wrap img{
+        width: 102.5vw;
+        margin-left: -5.5%;
+        margin-bottom: 6rem;
+    }
+
+    #program .wrap h4::before{
+        height: 38rem;
+        width: 100rem;
+        top: -5rem;
+        right: unset;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 50%);
+    }
+
+    #program .wrap > p{
+        font-size: 1.95rem;
+    }
+
+    #program .wrap .content{
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+
+    #program .wrap .content > div{
+        width: 100%;
+    }
+
+    #program .wrap .content h5 {
+        margin: 4rem 0;
+    }
+
+    #program .wrap .content > div > p{
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    #program .wrap > h5{
+        width: 100%;
+    }
+
+    #program .wrap .flow{
+        width: 100%;
+        margin: auto;
+    }
+
+    #program .recruit_contact{
+        margin-top: 4rem;
+        flex-direction: column;
+    }
+
+    #program .recruit_contact a{
+        width: 100%;
+    }
+
+    #program .recruit_contact .white{
+        width: calc(100% - 2px);
+    }
+
+    #thought{
+        margin: 4rem auto 9rem;
+        width: 90%;
+    }
+
+    #thought h4{
+        text-align: left;
+    }
+
+    #thought h4 span{
+        font-size: 2.75rem;
+    }
+
+    #thought p{
+        width: 95%;
+        line-height: 200%;
+        font-size: 1.8rem;
+    }
+
+    #thought h5{
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    #thought img{
+        margin-bottom: 4rem;
+    }
+
+    #thought .bold{
+        margin-top: 4rem;
+    }
+
+    #thought .recruit_contact{
+        margin-top: 4rem;
+        flex-direction: column;
+    }
+
+    #thought .recruit_contact a{
+        width: 100%;
+    }
+
+    #thought .recruit_contact .white{
+        width: calc(100% - 2px);
+    }
+
+    #interview{
+        margin-bottom: 6.5rem;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5rem;
+    }
+
+    #interview h4{
+        text-align: left;
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    #interview h4 b{
+        font-size: 2.75rem;
+    }
+
+    #interview .list{
+        width: 95%;
+        flex-wrap: wrap;
+    }
+
+    #interview .list .content{
+        width: 47%;
+        margin-bottom: 3rem;
+    }
+
+    #interview .list .content h4{
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #interview .list .content p{
+        text-align: left;
+        margin-left: 1rem;
+    }
+}
