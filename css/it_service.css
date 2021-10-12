@@ -25,15 +25,15 @@
 
 #it_top .it_list{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 #it_top .it_list a{
     border: 1px solid #707070;
     padding: 2rem 0;
-    font-size: 2rem;
-    width: 30%;
+    font-size: 1.75rem;
+    width: 32%;
     position: relative;
 }
 
@@ -42,7 +42,7 @@
     width: 2rem;
     height: 2rem;
     top: 50%;
-    margin-top: -2%;
+    transform: translate(50%, -50%);
     right: 2rem;
 }
 
@@ -99,7 +99,6 @@
     color: white;
     text-align: center;
     font-size: 2rem;
-    margin: 0 .5rem;
     position: relative;
     border: 1px solid #07192F;
 }
@@ -107,10 +106,10 @@
 .service .wrap .sec_contact a img{
     position: absolute;
     top: 50%;
-    margin-top: -3%;
-    right: 1rem;
+    right: 3rem;
     width: 3rem;
     height: 3rem;
+    transform: translate(50%, -50%);
 }
 
 .service .wrap .sec_contact .white{
