@@ -310,6 +310,7 @@
 
     #service_list .service_nav{
         margin: auto;
+        width: 85% ;
     }
 
     #service_list a{

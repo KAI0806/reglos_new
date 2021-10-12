@@ -1032,7 +1032,7 @@ body{
     #scroll_down a span::before {
         position: absolute;
         top: 8px;
-        left: 52%;
+        left: 56%;
         content: '';
         width: 5px;
         height: 5px;
