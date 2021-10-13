@@ -7,7 +7,14 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 7.5rem;
+}
+
+.creator_kv{
     background: url("../img/recruit/recruit_kv.jpg") center center/cover no-repeat;
+}
+
+.coordinator_kv{
+    background: url("../img/recruit/coordinator_kv.jpg") no-repeat center center/cover;
 }
 
 #recruit_kv h2{
@@ -119,6 +126,20 @@
     justify-content: center;
     align-items: stretch;
     margin-top: 10rem;
+    position: relative;
+}
+
+#about_creator .contact_border::before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 9rem;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 50%);
+    top: 50%;
+    background: #707070;
+    z-index: 1;
 }
 
 #about_creator .recruit_contact a{
@@ -448,6 +469,57 @@
     font-size: 1.5rem;
     text-align: center;
     margin: 0;
+}
+
+#feature{
+    padding: 11.5rem 0;
+    background: #F9F9F9;
+}
+
+#feature h4{
+    text-align: center;
+    font-size: 2.15rem;
+    line-height: 200%;
+    color: #171C5F;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 9.8rem;
+}
+
+#feature .feature_content{
+    max-width: 1440px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#feature .feature_content > div{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#feature .feature_content div img{
+    width: 100%;
+}
+
+#feature .feature_content div h5{
+    font-size: 3.25rem;
+    margin: 3.5rem 0;
+    padding-left: 3rem;
+    border-left: 1.8rem solid #171C5F;
+    line-height: 150%;
+    color: #171C5F;
+}
+
+#feature .feature_content div p{
+    margin: 0;
+    line-height: 200%;
+    font-size: 2.3rem;
 }
 
 @media screen and (max-width:1024px){
