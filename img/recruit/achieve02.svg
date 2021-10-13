@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="444" height="317" viewBox="0 0 444 317">
+  <g id="グループ_3056" data-name="グループ 3056" transform="translate(-1035 -4227)">
+    <g id="グループ_3054" data-name="グループ 3054" transform="translate(-9 60)">
+      <g id="グループ_3051" data-name="グループ 3051" transform="translate(0 -24)">
+        <line id="線_435" data-name="線 435" x2="250.028" y2="13.17" transform="translate(1112.917 4398.59)" fill="none" stroke="#707070" stroke-width="1"/>
+        <g id="グループ_3050" data-name="グループ 3050" transform="translate(1044.188 4215)">
+          <g id="Ring_Chart3" data-name="Ring Chart3" transform="translate(0 46.004)">
+            <path id="パス_3065" data-name="パス 3065" d="M0-87A68.728,68.728,0,0,1,68.728-18.272h-39.5A29.229,29.229,0,0,0,0-47.5Z" transform="translate(68.728 87)" fill="rgba(23,28,95,0.6)"/>
+            <path id="パス_3066" data-name="パス 3066" d="M68.728,0A68.728,68.728,0,0,1,0,68.728v-39.5A29.229,29.229,0,0,0,29.229,0Z" transform="translate(68.728 68.728)" fill="rgba(23,28,95,0.2)"/>
+            <path id="パス_3067" data-name="パス 3067" d="M-18.272,68.728A68.728,68.728,0,0,1-87,0h39.5A29.229,29.229,0,0,0-18.272,29.229Z" transform="translate(87 68.728)" fill="rgba(23,28,95,0.05)"/>
+            <path id="パス_3068" data-name="パス 3068" d="M-87-18.272A68.728,68.728,0,0,1-18.272-87v39.5A29.229,29.229,0,0,0-47.5-18.272Z" transform="translate(87 87)" fill="#171c5f"/>
+          </g>
+          <line id="線_434" data-name="線 434" y1="42.659" x2="246.473" transform="translate(69.123 3.215)" fill="none" stroke="#707070" stroke-width="1"/>
+          <g id="Ring_Chart6" data-name="Ring Chart6" transform="translate(242.89 0)">
+            <path id="パス_3076" data-name="パス 3076" d="M0-87A99.96,99.96,0,0,1,78.152-49.364L33.237-13.546A42.512,42.512,0,0,0,0-29.552Z" transform="translate(99.961 87)" fill="rgba(23,28,95,0.8)"/>
+            <path id="パス_3077" data-name="パス 3077" d="M73.843-54.244a99.96,99.96,0,0,1,19.3,84.567L37.137,17.54a42.512,42.512,0,0,0-8.209-35.965Z" transform="translate(104.27 91.88)" fill="rgba(23,28,95,0.6)"/>
+            <path id="パス_3078" data-name="パス 3078" d="M95.063,21.017A99.96,99.96,0,0,1,40.98,88.834L16.054,37.075a42.512,42.512,0,0,0,23-28.842Z" transform="translate(102.353 101.186)" fill="rgba(23,28,95,0.39)"/>
+            <path id="パス_3079" data-name="パス 3079" d="M48.994,85.095a99.96,99.96,0,0,1-86.742,0l24.926-51.759a42.512,42.512,0,0,0,36.89,0Z" transform="translate(94.338 104.926)" fill="rgba(23,28,95,0.2)"/>
+            <path id="パス_3080" data-name="パス 3080" d="M-30.736,88.834A99.96,99.96,0,0,1-84.819,21.017L-28.811,8.233a42.512,42.512,0,0,0,23,28.842Z" transform="translate(87.326 101.186)" fill="rgba(23,28,95,0.1)"/>
+            <path id="パス_3081" data-name="パス 3081" d="M-84.494,30.324a99.96,99.96,0,0,1,19.3-84.567l44.915,35.818A42.512,42.512,0,0,0-28.486,17.54Z" transform="translate(87.001 91.88)" fill="rgba(23,28,95,0.05)"/>
+            <path id="パス_3082" data-name="パス 3082" d="M-68.019-49.364A99.96,99.96,0,0,1,10.133-87v57.448A42.512,42.512,0,0,0-23.1-13.546Z" transform="translate(89.828 87)" fill="#171c5f"/>
+          </g>
+        </g>
+      </g>
+      <g id="グループ_3052" data-name="グループ 3052" transform="translate(-1 -75)">
+        <text id="_148_UP" data-name="148%UP" transform="translate(1274 4553)" fill="#404040" font-size="26" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="0" y="0">148%UP</tspan></text>
+        <text id="_175_UP" data-name="175%UP" transform="translate(1273 4515)" fill="#404040" font-size="26" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="0" y="0">175%UP</tspan></text>
+        <text id="社員数" transform="translate(1143 4552)" fill="#404040" font-size="26" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="0" y="0">社員数</tspan></text>
+        <text id="案件種数" transform="translate(1143 4515)" fill="#404040" font-size="26" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="0" y="0">案件種数</tspan></text>
+      </g>
+      <text id="社員数と案件種別" transform="translate(1044 4185)" fill="#404040" font-size="20" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="0" y="0">社員数と案件種別</tspan></text>
+    </g>
+    <text id="_2020年度比_実績" data-name="※2020年度比 実績" transform="translate(1395 4542)" fill="#404040" font-size="10" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="0" y="0">※2020</tspan><tspan y="0" font-family="HiraginoSans-W6, Hiragino Sans" font-weight="400">年度比</tspan><tspan y="0"> </tspan><tspan y="0" font-family="HiraginoSans-W6, Hiragino Sans" font-weight="400">実績</tspan></text>
+  </g>
+</svg>
