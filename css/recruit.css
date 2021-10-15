@@ -593,7 +593,7 @@
 }
 
 #achievements .achieve_second h5{
-    font-size: 18px;
+    font-size: 2.05rem;
     text-align: center;
     color: #07192F;
 }
@@ -670,8 +670,12 @@
 }
 
 @media screen and (max-width: 767px){
-    #recruit_kv{
+    .creator_kv{
         background: url("../img/recruit/recruit_bg_sp.jpg") center center/cover no-repeat;
+    }
+
+    .coordinator_kv{
+        background: url("../img/recruit/coordinator_sp_kv.jpg") no-repeat center center/cover;
     }
 
     #recruit_kv h2{
@@ -686,6 +690,10 @@
     #about_creator{
         width: 90%;
         margin-bottom: 4rem;
+    }
+
+    #about_creator h3{
+        line-height: 150%;
     }
 
     #about_creator h3 span{
@@ -896,5 +904,124 @@
     #interview .list .content p{
         text-align: left;
         margin-left: 1rem;
+    }
+
+    #about_creator .contact_border::before{
+        width: 1px;
+        height: 4rem;
+        top: 24%;
+    }
+
+    #feature{
+        padding: 4rem 0 0 0;
+    }
+
+    #feature h4{
+        text-align: left;
+        font-size: 2.8rem;
+        margin-left: 5%;
+        line-height: 150%;
+        margin-bottom: 4rem;
+    }
+
+    #feature h4 span{
+        font-size: 2.15rem;
+    }
+
+    #feature .feature_content{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    #feature .feature_content > div{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    #feature .feature_content div h5{
+        font-size: 2rem;
+        margin: 2.2rem 0;
+        padding-left: 1rem;
+        border-left: 1.3rem solid #171C5F;
+    }
+
+    #feature .feature_content div p{
+        font-size: 2.27rem;
+    }
+
+    #achievements{
+        margin: 4rem 0 10rem 0;
+    }
+
+    #achievements h4{
+        text-align: left;
+        margin-left: 5%;
+        font-size: 3.4rem;
+        line-height: 150%;
+        margin-bottom: 4rem;
+    }
+
+    #achievements h4 span{
+        font-size: 2.15rem;
+    }
+
+    #achievements .achieve_wrap{
+        width: 90%;
+    }
+    #achievements .achieve_wrap .achieve_content{
+        flex-direction: column;
+    }
+
+    #achievements .achieve_wrap .achieve_content img{
+        width: 100%;
+        margin-bottom: 2.8rem;
+    }
+
+    #achievements .achieve_wrap .achieve_content div{
+        width: 100%;
+    }
+
+    #achievements .achieve_wrap .achieve_content div h5{
+        font-size: 2.05rem;
+        margin: 0 0 3.5rem 0;
+        padding-left: 1rem;
+        border-left: 1.3rem solid #171C5F;
+    }
+
+    #achievements .achieve_wrap .achieve_content:nth-child(even){
+        flex-direction: column;
+        margin-top: 6.5rem;
+    }
+
+    #achievements .achieve_wrap .achieve_content div p{
+        font-size: 2.2rem;
+    }
+
+    #achievements .achieve_second{
+        width: 90%;
+    }
+
+    #achievements .achieve_second h5{
+        font-size: 1.9rem;
+    }
+
+    #achievements .recruit_contact{
+        margin-top: 6.5rem;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #achievements .recruit_contact a{
+        width: 100%;
+    }
+
+    #achievements .recruit_contact .white{
+        width: calc(100% - 2px);
+    }
+
+    #achievements .recruit_contact::before{
+        width: 1px;
+        height: 4rem;
+        top: 24%;
     }
 }
