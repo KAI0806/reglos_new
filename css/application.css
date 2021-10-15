@@ -1294,4 +1294,8 @@ footer .wrap .footer_bottom p{
     header nav ul li details ul li a{
         font-size: 2rem;
     }
+
+    .btn_contact:hover {
+        box-shadow: inset 6px 7px 6px #7b7575;
+    }
 }
