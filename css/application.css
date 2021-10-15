@@ -225,7 +225,7 @@ header .wrap .header_nav .is_current::after{
 .header_nav .trigger p{
     font-size: 1.8rem;
     line-height: 100%;
-    margin-top: .7rem;
+    margin-top: .5rem;
 }
 
 .header_nav .trigger::before{
