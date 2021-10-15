@@ -664,12 +664,40 @@
 }
 
 @media screen and (max-width:1024px){
+    #recruit_kv{
+        height: 55rem;
+    }
+
+    #recruit_kv h2{
+        font-size: 4.5rem;
+    }
+
     #about_creator, #program .wrap, #thought, #interview .list{
+        width: 90%;
+    }
+
+    #feature .feature_content{
+        width: 90%;
+    }
+
+    #achievements .achieve_wrap{
+        width: 90%;
+    }
+
+    #achievements .achieve_second{
+        width: 90%;
+    }
+
+    #achievements .recruit_contact{
         width: 90%;
     }
 }
 
 @media screen and (max-width: 767px){
+    #recruit_kv{
+        height: 73rem;
+    }
+
     .creator_kv{
         background: url("../img/recruit/recruit_bg_sp.jpg") center center/cover no-repeat;
     }
@@ -680,6 +708,7 @@
 
     #recruit_kv h2{
         font-size: 3.5rem;
+        margin-bottom: 5rem;
     }
 
     #recruit_kv h2 span::before{
