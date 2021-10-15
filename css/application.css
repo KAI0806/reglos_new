@@ -11,7 +11,7 @@ body{
 }
 
 main{
-    overflow: hidden;
+    overflow-x: hidden;
     margin-top: 7rem;
 }
 
@@ -1054,20 +1054,16 @@ footer .wrap .footer_bottom p{
     #nav{
         padding: 7rem 0 0 0;
         position: fixed;
-        min-height: calc(100vh - 7rem);
         width: 100%;
+        height: calc(100vh - 7rem);
         right: -100%;
         top: 0;
         background: white;
         transition: all .7s ease-in-out;
         z-index: 1;
         opacity: 0;
-        overflow: scroll;
+        overflow-y: scroll;
         line-height: 1.2;
-    }
-
-    .nav_wrap{
-        overflow: scroll;
     }
 
 
