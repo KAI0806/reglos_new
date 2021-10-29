@@ -3,96 +3,173 @@
     padding-bottom: 5rem;
 } */
 
-#company h2{
-    text-align: center;
-    position: relative;
-    padding-bottom: 2rem;
-    margin: 0;
-    margin-bottom: 10rem;
+#company h2 {
+  text-align: center;
+  position: relative;
+  padding-bottom: 2rem;
+  margin: 0;
+  margin-bottom: 10rem;
 }
 
-#company h2::before{
-    position: absolute;
-    content: "";
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    bottom: 0;
-    height: .1rem;
-    width: 40rem;
-    background: #9093BB;
+#company h2::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  height: 0.1rem;
+  width: 40rem;
+  background: #9093bb;
 }
 
-#company .comp_inner{
-    background: #07192F;
+#company .comp_inner {
+  background: #07192f;
 }
 
-#company .comp_inner .wrap{
-    width: 60%;
-    max-width: 1440px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 15rem 0;
+#company .comp_inner .wrap {
+  width: 60%;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 15rem 0;
 }
 
-#company .comp_inner .wrap .row{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    border-bottom: 1px solid #524F4E;
+#company .comp_inner .wrap .row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  border-bottom: 1px solid #524f4e;
 }
 
-#company .comp_inner .wrap .row .row_left{
-    width: 30%;
-    margin-left: 10rem;
+#company .comp_inner .wrap .row .row_left {
+  width: 30%;
+  margin-left: 10rem;
 }
 
-#company .comp_inner .wrap .row p{
-    color: white;
+#company .comp_inner .wrap .row p {
+  color: white;
 }
 
 /* #map{
     padding-bottom: 5rem;
 } */
-
-@media screen and (min-width:768px) and (max-width:1365px){
-    #company .comp_inner .wrap{
-        width: 80%;
-        padding: 10rem 0;
-    }
+.c_policy_outer {
+  max-width: 90%;
+  padding-bottom: 3.8rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.c_policy_outer img {
+  width: 68.9rem;
+}
+.c_policy_policy,
+.c_policy_motto {
+  width: 80.9rem;
+  margin: auto;
+  margin-right: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.c_policy_policy {
+  margin-top: 9.6rem;
+}
+.c_policy_inner h2 {
+  font-size: 4rem;
+  position: relative;
+  width: fit-content;
+}
+.c_policy_inner h2::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0.1rem;
+  background: #9093bb;
+}
+.c_policy_policy h3 {
+  font-size: 4rem;
+}
+.c_policy_motto h3 {
+  font-size: 2.6rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  #company .comp_inner .wrap {
+    width: 80%;
+    padding: 10rem 0;
+  }
+  .c_policy_outer {
+    grid-template-columns: auto;
+    gap: 5rem;
+  }
+  .c_policy_outer img {
+    margin: auto;
+  }
+  .c_policy_policy,
+  .c_policy_motto {
+    margin: auto;
+  }
+  .c_policy_policy {
+    margin-top: 9.6rem;
+  }
 }
 
-@media screen and (max-width: 767px){
-    #company h2{
-        margin-bottom: 5rem;
-    }
+@media screen and (max-width: 767px) {
+  #company h2 {
+    margin-bottom: 5rem;
+  }
 
-    #company h2::before{
-        height: 3px;
-        width: 30rem;
-        background: #07192F;
-    }
+  #company h2::before {
+    height: 3px;
+    width: 30rem;
+    background: #07192f;
+  }
 
-    #company .comp_inner{
-        width: 90%;
-        margin: auto;
-    }
+  #company .comp_inner {
+    width: 90%;
+    margin: auto;
+  }
 
-    #company .comp_inner .wrap{
-        width: 100%;
-        padding: 0;
-    }
+  #company .comp_inner .wrap {
+    width: 100%;
+    padding: 0;
+  }
 
-    #company .comp_inner .wrap .row .row_left{
-        margin-left: 2rem;
-        width: 25%;
-    }
+  #company .comp_inner .wrap .row .row_left {
+    margin-left: 2rem;
+    width: 25%;
+  }
 
-    #company .comp_inner .wrap .row p{
-        font-size: 1.5rem
-    }
+  #company .comp_inner .wrap .row p {
+    font-size: 1.5rem;
+  }
+  .c_policy_outer {
+    grid-template-columns: auto;
+    gap: 5rem;
+  }
+  .c_policy_outer img {
+    margin: auto;
+  }
+  .c_policy_policy,
+  .c_policy_motto {
+    margin: auto;
+    width: 45rem;
+    grid-template-columns: auto;
+    font-size: 1.8rem;
+  }
+  .c_policy_policy h3 {
+    text-align: center;
+  }
+  .c_policy_motto h3 {
+    font-size: 1.5rem;
+  }
+  .c_policy_outer img {
+    width: 45rem;
+  }
 }
