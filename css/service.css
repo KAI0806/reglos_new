@@ -145,6 +145,32 @@
     padding: 0 5rem;
 }
 
+#human .service_wrap .service_content a{
+    padding: 0 20rem 0 5rem;
+    position: relative;
+    font-size: 2rem;
+    color: #404040;
+    line-height: 300%;
+    display: block;
+    margin: 2rem 0;
+}
+
+#human .service_wrap .service_content a::before{
+    position: absolute;
+    content: "";
+    height: 5rem;
+    width: 5rem;
+    top: 50%;
+    right: 5rem;
+    transform: translate(0, -50%);
+    transition: all .5s ease-in-out;
+    background: url("../img/service_arrow.svg") no-repeat center center/contain;
+}
+
+#human .service_wrap .service_content a:hover::before{
+    right: 1rem;
+}
+
 .service_wrap .service_link{
     border-bottom: 1px solid #959595;
     padding: 0 12%;

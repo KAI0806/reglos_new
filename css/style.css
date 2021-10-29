@@ -820,7 +820,7 @@ body{
     .main_v_area_wrap.second.not404 {
         height: 260px
     }
-    .main_v_area_wrap:before {
+    /* .main_v_area_wrap:before {
         content: "";
         height: 21px;
         width: 100%;
@@ -831,7 +831,7 @@ body{
         top: 74px;
         left: 0;
         z-index: 1100
-    }
+    } */
     .main_v_area {
         position: relative;
         z-index: 9000;
