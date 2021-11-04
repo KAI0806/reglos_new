@@ -186,7 +186,7 @@ p{
     right: 2rem;
     transform: translate(-50%, -50%);
     top: 50%;
-    background: url("../img/it_service/arrow_white.svg");
+    background: url("../img/it_service/arrow_white.svg") no-repeat center center/contain;
     transition: all .3s ease-in-out;
 }
 
@@ -242,23 +242,105 @@ p{
     align-items: flex-start;
     width: 100%;
     margin-bottom: 8.3rem;
+    position: relative;
+}
+
+#member .service_wrap .service_flex::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 6rem;
+    bottom: -8rem;
+    background: #07192F;
+    box-shadow: 0 -7rem 1.6rem #07192F;
+    z-index: 15;
 }
 
 #member .service_wrap .service_flex div{
-    width: 21%;
+    width: 33%;
+    height: 76rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    position: relative;
+    z-index: 10;
 }
 
-#member .service_wrap .service_flex div img{
-    margin-bottom: 2.8rem;
+#member .service_wrap .service_flex div:first-child::before{
+    position: absolute;
+    content: "";
+    height: 75.7rem;
+    width: 50rem;
+    background: url("../img/job_change/terazono.png") no-repeat center center/contain;
+    z-index: -1;
+}
+
+#member .service_wrap .service_flex div:first-child::after{
+    position: absolute;
+    content: "";
+    height: 63rem;
+    width: 46rem;
+    opacity: .2;
+    background: url("../img/job_change/terazono_bg.svg") no-repeat center center/contain;
+    z-index: -2;
+}
+
+#member .service_wrap .service_flex div:nth-child(2)::before{
+    position: absolute;
+    content: "";
+    height: 75.7rem;
+    width: 50.63rem;
+    background: url("../img/job_change/tsuruya.png") no-repeat center center/contain;
+    z-index: -1;
+}
+
+#member .service_wrap .service_flex div:nth-child(2)::after{
+    position: absolute;
+    content: "";
+    height: 64rem;
+    width: 41.85rem;
+    left: 4rem;
+    top: 3rem;
+    opacity: .2;
+    background: url("../img/job_change/turuya_bg.svg") no-repeat center center/contain;
+    z-index: -2;
+}
+
+#member .service_wrap .service_flex div:nth-child(3)::before{
+    position: absolute;
+    content: "";
+    height: 75.7rem;
+    width: 46.9rem;
+    background: url("../img/job_change/kawasaki.png") no-repeat center center/contain;
+    z-index: -1;
+}
+
+#member .service_wrap .service_flex div:nth-child(3)::after{
+    position: absolute;
+    content: "";
+    height: 77.2rem;
+    width: 54rem;
+    opacity: .2;
+    background: url("../img/job_change/kawasaki_bg.svg") no-repeat center center/contain;
+    z-index: -2;
 }
 
 #member .service_wrap .service_flex div p{
     font-size: 1.6rem;
     color: white;
+}
+
+#member .service_wrap .service_flex div:first-child p, #member .service_wrap .service_flex div:first-child .name{
+    transform: translate(-6rem, 10rem);
+}
+
+#member .service_wrap .service_flex div:nth-child(2) p, #member .service_wrap .service_flex div:nth-child(2) .name{
+    transform: translate(5rem, 0);
+}
+
+#member .service_wrap .service_flex div:nth-child(3) p, #member .service_wrap .service_flex div:nth-child(3) .name{
+    transform: translate(22rem, 10rem);
 }
 
 #member .service_wrap .service_flex div .name{
@@ -288,10 +370,9 @@ p{
     margin-bottom: 4.1rem;
 }
 
-#jon_us h3{
-    font-size: 5.4rem;
-    color: white;
-    margin-bottom: 3.8rem;
+#jon_us img{
+    width: 103.744rem;
+    margin-bottom: 1.52rem;
 }
 
 #jon_us p{
