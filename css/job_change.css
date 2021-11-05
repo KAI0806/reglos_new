@@ -50,6 +50,10 @@ p{
 
 #feature .wrap div{
     width: 23%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
 
 #feature .wrap img{
@@ -64,7 +68,7 @@ p{
 
 /* interesting */
 #interesting{
-    padding: 6.6rem 0 12.5rem;
+    padding: 6.6rem 0 7.1rem;
     background: #F1F1F1;
 }
 
@@ -90,12 +94,11 @@ p{
 #interesting h4{
     font-size: 2.8rem;
     text-align: center;
-    margin-bottom: 7.5rem;
+    margin-bottom: 4.3rem;
 }
 
 #interesting p{
-    width: 69.2rem;
-    margin: auto;
+    text-align: center;
 }
 
 /* service */
@@ -151,6 +154,7 @@ p{
 
 #service .service_wrap .service_flex div img{
     margin-bottom: 2.8rem;
+    width: 31rem;
 }
 
 #service .service_wrap .service_flex div h3{
@@ -260,7 +264,7 @@ p{
     width: 33%;
     height: 76rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     position: relative;
@@ -331,20 +335,20 @@ p{
     color: white;
 }
 
-#member .service_wrap .service_flex div:first-child p, #member .service_wrap .service_flex div:first-child .name{
-    transform: translate(-6rem, 10rem);
-}
-
-#member .service_wrap .service_flex div:nth-child(2) p, #member .service_wrap .service_flex div:nth-child(2) .name{
-    transform: translate(5rem, 0);
-}
-
-#member .service_wrap .service_flex div:nth-child(3) p, #member .service_wrap .service_flex div:nth-child(3) .name{
-    transform: translate(22rem, 10rem);
-}
-
 #member .service_wrap .service_flex div .name{
-    height: 4.172rem;
+    height: 7.35rem;
+}
+
+#member .service_wrap .service_flex div:first-child .name, #member .service_wrap .service_flex div:first-child p{
+    transform: translate(30rem, 20rem);
+}
+
+#member .service_wrap .service_flex div:nth-child(2) .name, #member .service_wrap .service_flex div:nth-child(2) p{
+    transform: translate(36rem, 20rem);
+}
+
+#member .service_wrap .service_flex div:nth-child(3) .name, #member .service_wrap .service_flex div:nth-child(3) p{
+    transform: translate(44rem, 20rem);
 }
 
 #member .change_btn{
@@ -418,21 +422,43 @@ p{
     margin-bottom: 1.8rem;
 }
 
-#ink_list > div .wrap > h4{
+#ink_list > div .wrap h4{
     font-size: 2rem;
     font-weight: 100;
     margin-bottom: 9.4rem;
 }
 
-#ink_list > div .wrap > div{
+#ink_list > div .wrap .title{
+    padding-left: 11.3rem;
+    position: relative;
+}
+
+#ink_list .news .wrap .title::before{
+    position: absolute;
+    content: "";
+    width: 8.467rem;
+    height: 8.465rem;
+    left: 0;
+    background: url("../img/job_change/insta.png") no-repeat center center/contain;
+}
+
+#ink_list .page .wrap .title::before{
+    position: absolute;
+    content: "";
+    width: 8.467rem;
+    height: 8.465rem;
+    left: 0;
+    background: url("../img/job_change/link_img.svg") no-repeat center center/contain;
+}
+
+#ink_list > div .wrap .inner{
     display: flex;
     justify-content: space-between;
     align-items: stretch;
 }
 
-#ink_list > div .wrap .news_content{
+#ink_list > div .wrap .sns_img{
     width: 45%;
-    background: white;
     transition: all .2s ease-in-out;
 }
 
@@ -441,8 +467,9 @@ p{
     transition: all .2s ease-in-out;
 }
 
-#ink_list > div .wrap .news_content img{
-    width: 100%;
+#ink_list > div .wrap .inner img{
+    height: 32.2rem;
+    width: auto;
 }
 
 #ink_list > div .wrap .news_content h4{
@@ -463,4 +490,339 @@ p{
 
 #ink_list .page .wrap .change_btn{
     width: 49.2rem;
+}
+
+@media screen and (max-width: 1024px){
+    #chage_kv{
+        height: 64rem;
+    }
+
+    #service .service_wrap .service_flex div{
+        width: 30%;
+    }
+
+    #service::before{
+        display: none;
+    }
+
+    #member .service_wrap .service_flex div{
+        transform: translateX(-11rem);
+        height:63rem;
+    }
+
+    #member .service_wrap .service_flex::before{
+        bottom: -7rem;
+    }
+
+    #member::before{
+        display: none;
+    }
+
+    #member .service_wrap .service_flex div:first-child::before{
+        height: 60.7rem;
+        width: 50rem;
+    }
+
+    #member .service_wrap .service_flex div:first-child::after{
+        height: 47rem;
+        width: 46rem;
+    }
+
+    #member .service_wrap .service_flex div:nth-child(2)::before{
+        height: 60.7rem;
+        width: 50.63rem;
+    }
+
+    #member .service_wrap .service_flex div:nth-child(2)::after{
+        height: 47rem;
+        width: 41.85rem;
+    }
+
+    #member .service_wrap .service_flex div:nth-child(3)::before{
+        height: 60.7rem;
+        width: 46.9rem;
+    }
+
+    #member .service_wrap .service_flex div:nth-child(3)::after{
+        height: 47rem;
+        width: 54rem;
+    }
+
+    #member .service_wrap .service_flex div:nth-child(3) .name, #member .service_wrap .service_flex div:nth-child(3) p{
+        transform: translate(34rem, 20rem);
+    }
+
+    #member .service_wrap .service_flex div:first-child .name, #member .service_wrap .service_flex div:first-child p{
+        transform: translate(27rem, 20rem);
+    }
+
+    #ink_list > div .wrap .inner img{
+        height: 20.2rem;
+    }
+
+    #ink_list > div .wrap h4{
+        margin-bottom: 5rem;
+    }
+
+    #ink_list .news .wrap{
+        width: 80%;
+        padding: 5rem 0;
+    }
+
+    #ink_list > div .wrap{
+        padding: 5rem 0;
+    }
+
+    #ink_list .page .wrap img{
+        width: 100%;
+    }
+
+    #ink_list .page .wrap .change_btn{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px){
+
+    #chage_kv{
+        background: url("../img/job_change/change_kv_sp.png") no-repeat center center/contain;
+        height: 96.8rem;
+    }
+    
+    #chage_kv::before{
+        position: absolute;
+        content: "";
+        width: .1rem;
+        height: 4.8rem;
+        background: #707070;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        bottom: -4rem;
+    }
+
+    #feature{
+        padding: 3.3rem 0 0;
+    }
+
+    #feature h2{
+        margin-bottom: 2.4rem;
+    }
+
+    #feature .wrap{
+        flex-direction: column;
+    }
+
+    #feature .wrap div{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 3.8rem;
+    }
+
+    #feature .wrap img{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #feature .wrap p{
+        font-size: 2.4rem;
+    }
+
+    #interesting{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 3.3rem 0;
+    }
+
+    #interesting h3{
+        text-align: left;
+        font-size: 4rem;
+        padding-bottom: 3rem;
+        margin-bottom: 3.5rem;
+    }
+
+    #interesting h3::before{
+        width: 12.3rem;
+    }
+
+    #interesting h4{
+        font-size: 3.5rem;
+    }
+
+    #interesting p{
+        width: 73%;
+        margin: auto;
+        text-align: left;
+    }
+
+    #service{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #service::before{
+        display: none;
+    }
+
+    #service h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    #service .service_wrap .service_flex{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    #service .service_wrap .service_flex div{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    #service .service_wrap .service_flex div h3{
+        font-size: 2.8rem;
+        margin-bottom: 0;
+    }
+
+    #service .service_wrap .service_flex div p{
+        font-size: 2.4rem;
+    }
+
+    #member::before{
+        display: none;
+    }
+
+    #member .service_wrap .service_flex div:first-child::before{
+        height: 25.1rem;
+        width: 18rem;
+    }
+    
+    #member .service_wrap .service_flex div:first-child::after{
+        height: 26.8rem;
+        width: 18rem;
+    }
+    
+    #member .service_wrap .service_flex div:nth-child(2)::before{
+        height: 27.1rem;
+        width: 20rem;
+        left: -1rem;
+        top: -2rem;
+    }
+    
+    #member .service_wrap .service_flex div:nth-child(2)::after{
+        position: absolute;
+        content: "";
+        height: 27rem;
+        width: 20rem;
+        left: 0;
+        top: 0;
+    }
+    
+    #member .service_wrap .service_flex div:nth-child(3)::before{
+        height: 25.1rem;
+        width: 18rem;
+    }
+    
+    #member .service_wrap .service_flex div:nth-child(3)::after{
+        height: 25.1rem;
+        width: 18rem;
+    }
+
+    #member .service_wrap .service_flex div{
+        height: auto;
+        transform: translateX(-2rem);
+    }
+
+    #member .service_wrap .service_flex::before{
+        bottom: -36rem;
+    }
+
+    #member .service_wrap .sp_flex{
+        z-index: 50;
+        justify-content: space-between;
+        margin-top: 17rem;
+    }
+
+    #member .service_wrap .sp_flex div{
+        width: 25%;
+    }
+
+    #member .service_wrap .sp_flex div:nth-child(2){
+        transform: translateY(-2rem);
+    }
+
+    #member .service_wrap .sp_flex div:nth-child(3){
+        transform: translateY(1rem);
+    }
+
+    #member .service_wrap .sp_flex img{
+        width: 100%;
+        border-bottom: .5px solid white;
+        padding-bottom: 2.5rem;
+    }
+
+    #member .service_wrap .sp_flex p{
+        font-size: 1.6rem;
+        color: white;
+    }
+
+    .change_btn{
+        padding: 2rem 0;
+    }
+
+    #jon_us img{
+        width: 90%;
+    }
+
+    #jon_us p{
+        width: 80%;
+    }
+
+    #ink_list{
+        flex-direction: column;
+    }
+
+    #ink_list .news .wrap{
+        padding: 5rem 0;
+    }
+
+    #ink_list .page .wrap{
+        padding: 5rem 0;
+    }
+
+    #ink_list .news{
+        width: calc(100% - 4.6rem);
+    }
+
+    #ink_list > div{
+        width: calc(100% - 4.6rem);
+    }
+
+    #ink_list > div .wrap{
+        width: 85%;
+    }
+
+    #ink_list > div .wrap h4{
+        margin-bottom: 4.5rem;
+    }
+
+    #ink_list > div .wrap .inner img{
+        height: 20rem;
+        width: auto;
+    }
+
+    #ink_list .page .wrap img{
+        width: 100%;
+    }
+
+    #ink_list .page .wrap .change_btn{
+        width: 100%;
+    }
 }
