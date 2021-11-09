@@ -11,10 +11,17 @@ p{
 
 #chage_kv{
     width: 100%;
-    height: 101rem;
-    background: url("../img/job_change/change_kv.png") no-repeat center center/contain;
+    background-image: url('../img/job_change/chage_kv_bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-bottom: 9.6rem;
     position: relative;
+}
+
+#chage_kv img{
+    width: 100%;
 }
 
 #chage_kv::before{
@@ -26,6 +33,16 @@ p{
     left: 50%;
     transform: translate(-50%, 50%);
     bottom: -4rem;
+}
+
+#chage_kv::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1rem;
+    bottom: -.5rem;
+    left: 0;
+    background: white;
 }
 
 #feature{
@@ -548,8 +565,8 @@ p{
 }
 
 @media screen and (max-width: 1024px){
-    #chage_kv{
-        height: 64rem;
+    #chage_kv::after{
+        bottom: -.1rem;
     }
 
     #service .service_wrap .service_flex div{
@@ -656,7 +673,6 @@ p{
 @media screen and (max-width: 767px){
 
     #chage_kv{
-        background: url("../img/job_change/change_kv_sp.png") no-repeat center center/contain;
         height: 96.8rem;
     }
     
