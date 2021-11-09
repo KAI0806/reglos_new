@@ -368,6 +368,11 @@ footer .wrap .footer_top .footer_nav div p{
 }
 
 @media screen and (max-width: 767px){
+
+    .parallax_content{
+        background-size: 120vh;
+    }
+
     #thought{
         width: 85%;
         text-align: center;

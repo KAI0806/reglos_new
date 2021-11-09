@@ -364,6 +364,15 @@
         padding: 3rem 0;
     }
 
+    #human .service_wrap .service_content a{
+        padding: 0 5rem 0 3rem;
+        line-height: 200%;
+    }
+
+    #human .service_wrap .service_content a::before{
+        right: 0;
+    }
+
     .service_wrap{
         width: 100%;
     }
