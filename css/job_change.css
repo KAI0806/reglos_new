@@ -224,6 +224,17 @@ p{
     top: 50%;
 }
 
+#member::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 16.1rem;
+    bottom: 0;
+    background: #07192F;
+    box-shadow: 0 -10rem 1.6rem #07192F;
+    z-index: 0;
+}
+
 #member h2{
     width: 85%;
     margin: auto;
@@ -240,7 +251,50 @@ p{
     flex-direction: column;
 }
 
-#member .service_wrap .service_flex{
+#member .service_wrap .member_img{
+    height: 80.536rem;
+    width: 100%;
+    background: url("../img/job_change/member.png") no-repeat center center/contain;
+    position: relative;
+}
+
+#member .service_wrap .member_img div p{
+    color: white;
+    font-size: 1.8rem;
+}
+
+#member .service_wrap .member_img div{
+    position: absolute;
+    top: 42%;
+    transform: translate(0, -50%);
+    width: fit-content;
+}
+
+#member .service_wrap .member_img div:first-child{
+    left: 27%;
+}
+
+#member .service_wrap .member_img div:first-child img{
+    width: 11.474rem;
+}
+
+#member .service_wrap .member_img div:nth-child(2){
+    left: 56%;
+}
+
+#member .service_wrap .member_img div:nth-child(2) img{
+    width: 11.619rem;
+}
+
+#member .service_wrap .member_img div:nth-child(3){
+    left: 86%;
+}
+
+#member .service_wrap .member_img div:nth-child(3) img{
+    width: 12.464rem;
+}
+
+/* #member .service_wrap .service_flex{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -349,10 +403,11 @@ p{
 
 #member .service_wrap .service_flex div:nth-child(3) .name, #member .service_wrap .service_flex div:nth-child(3) p{
     transform: translate(44rem, 20rem);
-}
+} */
 
 #member .change_btn{
     border: .1rem solid white;
+    z-index: 10;
 }
 
 #jon_us{
@@ -512,6 +567,22 @@ p{
 
     #member .service_wrap .service_flex::before{
         bottom: -7rem;
+    }
+
+    #member .service_wrap .member_img{
+        height: 60rem;
+    }
+
+    #member::after{
+        height: 10rem;
+    }
+
+    #member .service_wrap .member_img div:nth-child(2){
+        left: 58%;
+    }
+
+    #member .service_wrap .member_img div:nth-child(3){
+        left: 90%;
     }
 
     #member::before{
@@ -699,7 +770,13 @@ p{
         display: none;
     }
 
-    #member .service_wrap .service_flex div:first-child::before{
+    #member .service_wrap .member_img{
+        height: 30.604rem;
+        width: 100%;
+        background: url("../img/job_change/member_sp.png") no-repeat center center/contain;
+    }
+
+    /* #member .service_wrap .service_flex div:first-child::before{
         height: 25.1rem;
         width: 18rem;
     }
@@ -742,12 +819,16 @@ p{
 
     #member .service_wrap .service_flex::before{
         bottom: -36rem;
+    } */
+
+    #member::after{
+        height: 30rem;
     }
 
     #member .service_wrap .sp_flex{
         z-index: 50;
         justify-content: space-between;
-        margin-top: 17rem;
+        margin-top: 2rem;
     }
 
     #member .service_wrap .sp_flex div{
