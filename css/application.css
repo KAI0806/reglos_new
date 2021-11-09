@@ -643,7 +643,7 @@ footer .wrap .footer_bottom .foot_right .right_content .bottom_nav a:hover{
 footer .wrap .footer_bottom p{
     font-size: 1.5rem;
 }
-.parallax_box{
+/* .parallax_box{
     z-index: -1;
     perspective: 100px;
     position: relative;
@@ -658,7 +658,7 @@ footer .wrap .footer_bottom p{
   .parallax_front{
     -webkit-transform: translateZ(-10px);
     transform: translateZ(-10px);
-  }
+  } */
 @media screen and (max-width: 1190px){
     .footer_contact {
         overflow: hidden;
