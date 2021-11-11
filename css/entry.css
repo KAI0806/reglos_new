@@ -258,6 +258,7 @@ input{
     width: 100%;
     height: 6.3rem;
     opacity: 0;
+    cursor: pointer;
 }
 
 .inline-radio div label {
