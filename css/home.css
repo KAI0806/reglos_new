@@ -1,12 +1,8 @@
 @charset "UTF-8";
-.header_nav .trigger p{
-    margin-top: .3rem !important;
-}
 
-.header_nav .trigger::before{
-    top: .3rem !important;
-}
-
+.header_nav .trigger p {
+    line-height: 1.2!important;
+  }
 footer .wrap .footer_top .footer_nav div p{
     line-height: 150%;
 }

@@ -223,6 +223,72 @@ input{
     text-decoration:underline;
 }
 
+#form .radio_outer{
+    margin-bottom: 10.2rem;
+}
+
+#form .radio_outer > p{
+    margin-bottom: 3.1rem;
+}
+
+.inline-radio {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    margin-bottom: 3.3rem;
+}
+
+.inline-radio p{
+    width: 7rem;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.inline-radio div{
+    position: relative;
+    flex: 1;
+    margin-right: .3rem;
+}
+
+.inline-radio div:last-child{
+    margin-right: 0;
+}
+
+.inline-radio input {
+    width: 100%;
+    height: 6.3rem;
+    opacity: 0;
+}
+
+.inline-radio div label {
+    position: absolute;
+    top: 0; left: 0;
+    color: #07192F;
+    font-size: 2.4rem;
+    width: 100%;
+    height: 100%;
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.inline-radio div:nth-child(1) label{
+    border-left: none;
+}
+
+.inline-radio div:last-child label {
+    border-right: 0;
+}
+
+input:checked + label {
+    background: #323453;
+    font-weight: 500;
+    color: white;
+}
+
+
 @media screen and (min-width:768px) and (max-width:1365px){
     #form{
         width: 75%;
