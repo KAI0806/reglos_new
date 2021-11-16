@@ -327,23 +327,27 @@ header .wrap .entry_link small {
 
 #media .media_content {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  margin-left: 14.6rem;
 }
 
 #media .media_content h2 {
   color: black;
   border-right: 1px solid #707070;
-  padding-right: 2rem;
+  padding-right: 3.3rem;
   line-height: 1.2;
+  font-weight: normal;
 }
 
 #media .media_content .media_link {
-  padding-left: 2rem;
+  padding-left: 8.7rem;
 }
 
 #media .media_content h4 {
   color: black;
+  font-size: 4.1rem;
+  font-weight: normal;
   position: relative;
   transition: all 0.2s ease-in-out;
 }
@@ -358,16 +362,18 @@ header .wrap .entry_link small {
   content: "";
   width: 2rem;
   height: 1.8rem;
-  top: 0;
-  left: 12rem;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -2rem;
   background: url("../img/media_arrow.svg") center center/cover no-repeat;
 }
 
 #media img {
   position: absolute;
   right: 10rem;
-  top: 10%;
-  width: 41rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 91.3rem;
 }
 
 /* foot_contact */
@@ -1252,6 +1258,15 @@ footer .wrap .footer_bottom p {
   #media .media_content {
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 0;
+  }
+
+  #media .media_content h4{
+    font-size: 3rem;
+  }
+
+  #media .media_content h4::before{
+    right: -1rem;
   }
 
   #media img {
@@ -1259,6 +1274,7 @@ footer .wrap .footer_bottom p {
     width: 60%;
     right: unset;
     top: unset;
+    transform: unset;
   }
 
   #media .media_content h2 {
