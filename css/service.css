@@ -145,7 +145,7 @@
     padding: 0 5rem;
 }
 
-#human .service_wrap .service_content a{
+#human .service_wrap .service_content a, #creator .service_wrap .service_content a{
     padding: 0 20rem 0 5rem;
     position: relative;
     font-size: 2rem;
@@ -155,7 +155,7 @@
     margin: 2rem 0;
 }
 
-#human .service_wrap .service_content a::before{
+#human .service_wrap .service_content a::before, #creator .service_wrap .service_content a::before{
     position: absolute;
     content: "";
     height: 5rem;
@@ -167,7 +167,7 @@
     background: url("../img/service_arrow.svg") no-repeat center center/contain;
 }
 
-#human .service_wrap .service_content a:hover::before{
+#human .service_wrap .service_content a:hover::before, #creator .service_wrap .service_content a:hover::before{
     right: 1rem;
 }
 
